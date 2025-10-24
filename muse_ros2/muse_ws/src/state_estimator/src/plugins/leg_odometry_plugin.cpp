@@ -1,3 +1,12 @@
+/* 
+Sincroniza IMU, JointStateWithAcceleration, ContactDetection y Attitude, 
+usa el URDF con Pinocchio para obtener las velocidades lineales de cada 
+pie relativas a la base, promedia las de las patas en stance para estimar 
+la velocidad lineal de la base (rotada al mundo con la actitud), y publica 
+todo en state_estimator_msgs/LegOdometry (lin_vel_lf/rf/lh/rh y base_velocity).
+*/
+
+
 #include <pinocchio/parsers/urdf.hpp>
 #include <pinocchio/multibody/data.hpp>
 #include <pinocchio/multibody/fcl.hpp>
@@ -78,7 +87,7 @@ ExactTimePolicy;
 			std::string urdf_path_param;
 			// node_->declare_parameter("leg_odometry_plugin.urdf_path", "");
 			// urdf_path_param = node_->get_parameter("leg_odometry_plugin.urdf_path").as_string();
-			urdf_path_param = "/home/workstation/ros2_ws/src/go2_description/xacro/robot.urdf";
+			urdf_path_param = "/home/workstation/ros2_ws/src/unitree_go2_upc/go2_description/xacro/robot.urdf";
 			RCLCPP_INFO_STREAM(node_->get_logger(), "URDF path parameter: " << urdf_path_param);
 
 			if (urdf_path_param.empty()) {

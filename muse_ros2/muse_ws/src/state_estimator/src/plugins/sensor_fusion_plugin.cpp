@@ -1,3 +1,11 @@
+/* 
+Recibe IMU (aceleración), Attitude (cuaternión y ω) y LegOdometry (v_base), 
+ejecuta un KF que predice con la IMU (rotada por base_R_imu y menos gravedad)
+y corrige con la velocidad de piernas, toma la orientación de Attitude, y publica 
+un nav_msgs/Odometry con pose (posición + orientación) y twist (vel. lineal del KF 
+y vel. angular de Attitude).
+*/
+
 #include "state_estimator/Models/sensor_fusion.hpp"
 #include "state_estimator/plugin.hpp"
 #include <rclcpp/rclcpp.hpp>

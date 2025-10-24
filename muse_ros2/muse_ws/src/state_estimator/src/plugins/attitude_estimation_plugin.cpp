@@ -1,3 +1,9 @@
+
+/* 
+Recibe IMU (sensor_msgs/Imu) en /sensors/imu, estima la actitud con un XKF 
+(usando base_R_imu, gravedad y norte) y publica en attitude un state_estimator_msgs/Attitude 
+con cuaternión, roll/pitch/yaw (°) y velocidad angular filtrada.
+*/
 // #include "state_estimator/plugin.hpp"
 // #include "state_estimator/Models/attitude_bias_NLO.hpp"
 // #include "state_estimator/Models/attitude_bias_XKF.hpp"
