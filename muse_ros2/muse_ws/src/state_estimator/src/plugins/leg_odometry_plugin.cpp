@@ -78,7 +78,7 @@ ExactTimePolicy;
 			std::string urdf_path_param;
 			// node_->declare_parameter("leg_odometry_plugin.urdf_path", "");
 			// urdf_path_param = node_->get_parameter("leg_odometry_plugin.urdf_path").as_string();
-			urdf_path_param = "/home/go2/go2_ws/src/go2_description/xacro/robot.urdf";
+			urdf_path_param = "/home/workstation/ros2_ws/src/go2_description/xacro/robot.urdf";
 			RCLCPP_INFO_STREAM(node_->get_logger(), "URDF path parameter: " << urdf_path_param);
 
 			if (urdf_path_param.empty()) {
