@@ -1,5 +1,0 @@
-[ 23%] Built target iitcommons
-[ 33%] Built target gtest_main
-[ 42%] Built target gtest
-[35m[1mConsolidate compiler generated dependencies of target vm-test[0m
-[ 47%] [32mBuilding CXX object CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o[0m

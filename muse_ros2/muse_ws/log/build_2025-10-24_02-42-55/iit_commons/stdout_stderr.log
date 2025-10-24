@@ -1,9 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target iitcommons[0m
-[  4%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/fbl/four_bar_linkage.cpp.o[0m
-[01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/fbl/four_bar_linkage.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kiit/commons/four_bar_linkage.h: No such file or directory
-    2 | #include [01;31m[K<iit/commons/four_bar_linkage.h>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/iitcommons.dir/build.make:90: CMakeFiles/iitcommons.dir/src/fbl/four_bar_linkage.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/iitcommons.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

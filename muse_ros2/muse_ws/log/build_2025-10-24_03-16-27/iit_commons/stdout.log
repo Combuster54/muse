@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target iitcommons[0m
-[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
-[ 19%] Built target gtest
-[ 19%] Built target gtest_main
-[ 42%] Built target iitcommons
-[ 47%] [32mBuilding CXX object CMakeFiles/algebra-test.dir/src/algebra_test.cpp.o[0m
-[ 52%] [32mBuilding CXX object CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o[0m
-[ 57%] [32mBuilding CXX object CMakeFiles/filt-test.dir/src/test-filters.cpp.o[0m
