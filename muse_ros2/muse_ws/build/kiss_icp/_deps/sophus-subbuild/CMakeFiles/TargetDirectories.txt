@@ -1,3 +1,0 @@
-/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp/_deps/sophus-subbuild/CMakeFiles/sophus-populate.dir
-/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp/_deps/sophus-subbuild/CMakeFiles/edit_cache.dir
-/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp/_deps/sophus-subbuild/CMakeFiles/rebuild_cache.dir
