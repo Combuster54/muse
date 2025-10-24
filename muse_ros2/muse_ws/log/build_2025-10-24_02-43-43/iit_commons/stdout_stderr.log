@@ -1,0 +1,10 @@
+[  4%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/fbl/four_bar_linkage.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/planning.cpp.o[0m
+In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/planning.cpp:2[m[K:
+[01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:5:10:[m[K [01;31m[Kfatal error: [m[Kiit/rbd/rbd.h: No such file or directory
+    5 | #include [01;31m[K<iit/rbd/rbd.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/iitcommons.dir/build.make:118: CMakeFiles/iitcommons.dir/src/planning.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/iitcommons.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,11 @@
+[0.025s] Invoking command in '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12
+[0.121s] [  4%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/hydraulics.cpp.o[0m
+[0.810s] [  9%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/planning.cpp.o[0m
+[0.830s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/planning.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kiit/commons/planning/planning.h: No such file or directory
+[0.830s]     2 | #include [01;31m[K<iit/commons/planning/planning.h>[m[K
+[0.830s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.830s] compilation terminated.
+[0.830s] gmake[2]: *** [CMakeFiles/iitcommons.dir/build.make:118: CMakeFiles/iitcommons.dir/src/planning.cpp.o] Error 1
+[0.831s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/iitcommons.dir/all] Error 2
+[0.832s] gmake: *** [Makefile:146: all] Error 2
+[0.840s] Invoked command in '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12

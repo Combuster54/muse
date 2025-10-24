@@ -1,0 +1,11 @@
+source;share/iit_commons/hook/cmake_prefix_path.ps1
+source;share/iit_commons/hook/cmake_prefix_path.dsv
+source;share/iit_commons/hook/cmake_prefix_path.sh
+source;share/iit_commons/hook/ld_library_path_lib.ps1
+source;share/iit_commons/hook/ld_library_path_lib.dsv
+source;share/iit_commons/hook/ld_library_path_lib.sh
+source;share/iit_commons/local_setup.bash
+source;share/iit_commons/local_setup.dsv
+source;share/iit_commons/local_setup.ps1
+source;share/iit_commons/local_setup.sh
+source;share/iit_commons/local_setup.zsh

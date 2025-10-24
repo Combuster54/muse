@@ -1,0 +1,7 @@
+[ 23%] Built target iitcommons
+[ 33%] Built target gtest
+[ 42%] Built target gtest_main
+[ 47%] [32mBuilding CXX object CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/algebra-test.dir/src/algebra_test.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/legboolmap-test.dir/src/legboolmap_test.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/filt-test.dir/src/test-filters.cpp.o[0m

@@ -1,0 +1,11 @@
+[0.034s] Invoking command in '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target iitcommons[0m
+[0.145s] [  4%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/fbl/four_bar_linkage.cpp.o[0m
+[0.228s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/fbl/four_bar_linkage.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kiit/commons/four_bar_linkage.h: No such file or directory
+[0.231s]     2 | #include [01;31m[K<iit/commons/four_bar_linkage.h>[m[K
+[0.232s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.232s] compilation terminated.
+[0.232s] gmake[2]: *** [CMakeFiles/iitcommons.dir/build.make:90: CMakeFiles/iitcommons.dir/src/fbl/four_bar_linkage.cpp.o] Error 1
+[0.232s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/iitcommons.dir/all] Error 2
+[0.234s] gmake: *** [Makefile:146: all] Error 2
+[0.237s] Invoked command in '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12

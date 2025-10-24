@@ -1,0 +1,673 @@
+[0.000000] (-) TimerEvent: {}
+[0.000494] (iit_commons) JobQueued: {'identifier': 'iit_commons', 'dependencies': OrderedDict()}
+[0.000546] (state_estimator_msgs) JobQueued: {'identifier': 'state_estimator_msgs', 'dependencies': OrderedDict()}
+[0.000571] (state_estimator) JobQueued: {'identifier': 'state_estimator', 'dependencies': OrderedDict([('state_estimator_msgs', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs')])}
+[0.004954] (state_estimator_msgs) JobStarted: {'identifier': 'state_estimator_msgs'}
+[0.017787] (iit_commons) JobStarted: {'identifier': 'iit_commons'}
+[0.027845] (state_estimator_msgs) JobProgress: {'identifier': 'state_estimator_msgs', 'progress': 'cmake'}
+[0.028029] (state_estimator_msgs) JobProgress: {'identifier': 'state_estimator_msgs', 'progress': 'build'}
+[0.028178] (state_estimator_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs', '--', '-j12', '-l12'], 'cwd': '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', '0fa4e54b97e2'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/muse_ws/muse_ros2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/dev_ws/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble')]), 'shell': False}
+[0.038602] (iit_commons) JobProgress: {'identifier': 'iit_commons', 'progress': 'cmake'}
+[0.039743] (iit_commons) JobProgress: {'identifier': 'iit_commons', 'progress': 'build'}
+[0.040618] (iit_commons) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons', '--', '-j12', '-l12'], 'cwd': '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', '0fa4e54b97e2'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/muse_ws/muse_ros2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/dev_ws/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble')]), 'shell': False}
+[0.099640] (-) TimerEvent: {}
+[0.139132] (iit_commons) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/iitcommons.dir/src/hydraulics.cpp.o\x1b[0m\n'}
+[0.150418] (state_estimator_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.202388] (-) TimerEvent: {}
+[0.302978] (-) TimerEvent: {}
+[0.403661] (-) TimerEvent: {}
+[0.504146] (-) TimerEvent: {}
+[0.604679] (-) TimerEvent: {}
+[0.716587] (-) TimerEvent: {}
+[0.817058] (-) TimerEvent: {}
+[0.828275] (iit_commons) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/iitcommons.dir/src/planning.cpp.o\x1b[0m\n'}
+[0.848123] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/planning.cpp:2:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kiit/commons/planning/planning.h: No such file or directory\n'}
+[0.848540] (iit_commons) StderrLine: {'line': b'    2 | #include \x1b[01;31m\x1b[K<iit/commons/planning/planning.h>\x1b[m\x1b[K\n'}
+[0.848651] (iit_commons) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.848801] (iit_commons) StderrLine: {'line': b'compilation terminated.\n'}
+[0.849043] (iit_commons) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/iitcommons.dir/build.make:118: CMakeFiles/iitcommons.dir/src/planning.cpp.o] Error 1\n'}
+[0.850093] (iit_commons) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/iitcommons.dir/all] Error 2\n'}
+[0.850446] (iit_commons) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.858286] (iit_commons) CommandEnded: {'returncode': 2}
+[0.872645] (iit_commons) JobEnded: {'identifier': 'iit_commons', 'rc': 2}
+[0.917246] (-) TimerEvent: {}
+[1.017821] (-) TimerEvent: {}
+[1.119744] (-) TimerEvent: {}
+[1.220340] (-) TimerEvent: {}
+[1.320956] (-) TimerEvent: {}
+[1.421422] (-) TimerEvent: {}
+[1.522631] (-) TimerEvent: {}
+[1.623069] (-) TimerEvent: {}
+[1.723482] (-) TimerEvent: {}
+[1.824051] (-) TimerEvent: {}
+[1.924485] (-) TimerEvent: {}
+[2.028532] (-) TimerEvent: {}
+[2.132755] (-) TimerEvent: {}
+[2.234355] (-) TimerEvent: {}
+[2.334862] (-) TimerEvent: {}
+[2.435362] (-) TimerEvent: {}
+[2.536067] (-) TimerEvent: {}
+[2.636681] (-) TimerEvent: {}
+[2.737123] (-) TimerEvent: {}
+[2.837782] (-) TimerEvent: {}
+[2.938275] (-) TimerEvent: {}
+[3.041424] (-) TimerEvent: {}
+[3.090907] (state_estimator_msgs) StdoutLine: {'line': b'[  0%] Built target state_estimator_msgs__cpp\n'}
+[3.141878] (-) TimerEvent: {}
+[3.146838] (state_estimator_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_state_estimator_msgs\n'}
+[3.179694] (state_estimator_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.241773] (-) TimerEvent: {}
+[3.346546] (-) TimerEvent: {}
+[3.447216] (-) TimerEvent: {}
+[3.552025] (-) TimerEvent: {}
+[3.652895] (-) TimerEvent: {}
+[3.754742] (-) TimerEvent: {}
+[3.855736] (-) TimerEvent: {}
+[3.956190] (-) TimerEvent: {}
+[4.060387] (-) TimerEvent: {}
+[4.161009] (-) TimerEvent: {}
+[4.261456] (-) TimerEvent: {}
+[4.361918] (-) TimerEvent: {}
+[4.465318] (-) TimerEvent: {}
+[4.568402] (-) TimerEvent: {}
+[4.668868] (-) TimerEvent: {}
+[4.769407] (-) TimerEvent: {}
+[4.780511] (state_estimator_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/attitude__type_support.cpp.o\x1b[0m\n'}
+[4.875005] (-) TimerEvent: {}
+[4.983526] (-) TimerEvent: {}
+[5.085467] (-) TimerEvent: {}
+[5.186722] (-) TimerEvent: {}
+[5.287350] (-) TimerEvent: {}
+[5.387889] (-) TimerEvent: {}
+[5.488374] (-) TimerEvent: {}
+[5.588447] (state_estimator_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/get_estimator_description__type_support.cpp.o\x1b[0m\n'}
+[5.588858] (-) TimerEvent: {}
+[5.689254] (-) TimerEvent: {}
+[5.789966] (-) TimerEvent: {}
+[5.890975] (-) TimerEvent: {}
+[5.995910] (-) TimerEvent: {}
+[6.099501] (-) TimerEvent: {}
+[6.200083] (-) TimerEvent: {}
+[6.300680] (-) TimerEvent: {}
+[6.401245] (-) TimerEvent: {}
+[6.505124] (-) TimerEvent: {}
+[6.565098] (state_estimator_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/get_whitelist__type_support.cpp.o\x1b[0m\n'}
+[6.608382] (-) TimerEvent: {}
+[6.708910] (-) TimerEvent: {}
+[6.810289] (-) TimerEvent: {}
+[6.912878] (-) TimerEvent: {}
+[7.013780] (-) TimerEvent: {}
+[7.114387] (-) TimerEvent: {}
+[7.214904] (-) TimerEvent: {}
+[7.315715] (-) TimerEvent: {}
+[7.347238] (state_estimator_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/list_all_estimators__type_support.cpp.o\x1b[0m\n'}
+[7.415897] (-) TimerEvent: {}
+[7.516421] (-) TimerEvent: {}
+[7.616929] (-) TimerEvent: {}
+[7.721301] (-) TimerEvent: {}
+[7.821892] (-) TimerEvent: {}
+[7.923246] (-) TimerEvent: {}
+[7.980512] (state_estimator_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/pause_estimator__type_support.cpp.o\x1b[0m\n'}
+[8.023431] (-) TimerEvent: {}
+[8.123961] (-) TimerEvent: {}
+[8.228416] (-) TimerEvent: {}
+[8.328972] (-) TimerEvent: {}
+[8.430227] (-) TimerEvent: {}
+[8.530769] (-) TimerEvent: {}
+[8.589037] (state_estimator_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/reset_estimator__type_support.cpp.o\x1b[0m\n'}
+[8.630918] (-) TimerEvent: {}
+[8.731410] (-) TimerEvent: {}
+[8.834411] (-) TimerEvent: {}
+[8.934993] (-) TimerEvent: {}
+[9.042060] (-) TimerEvent: {}
+[9.142656] (-) TimerEvent: {}
+[9.196988] (state_estimator_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/restart_estimator__type_support.cpp.o\x1b[0m\n'}
+[9.244378] (-) TimerEvent: {}
+[9.346171] (-) TimerEvent: {}
+[9.453163] (-) TimerEvent: {}
+[9.553714] (-) TimerEvent: {}
+[9.657331] (-) TimerEvent: {}
+[9.759267] (-) TimerEvent: {}
+[9.832251] (state_estimator_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/resume_estimator__type_support.cpp.o\x1b[0m\n'}
+[9.859863] (-) TimerEvent: {}
+[9.962871] (-) TimerEvent: {}
+[10.065192] (-) TimerEvent: {}
+[10.167613] (-) TimerEvent: {}
+[10.268306] (-) TimerEvent: {}
+[10.370575] (-) TimerEvent: {}
+[10.436360] (state_estimator_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/start_estimator__type_support.cpp.o\x1b[0m\n'}
+[10.476681] (-) TimerEvent: {}
+[10.577392] (-) TimerEvent: {}
+[10.678389] (-) TimerEvent: {}
+[10.779110] (-) TimerEvent: {}
+[10.879692] (-) TimerEvent: {}
+[10.984412] (-) TimerEvent: {}
+[11.067841] (state_estimator_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/stop_estimator__type_support.cpp.o\x1b[0m\n'}
+[11.085666] (-) TimerEvent: {}
+[11.186403] (-) TimerEvent: {}
+[11.288795] (-) TimerEvent: {}
+[11.389331] (-) TimerEvent: {}
+[11.490915] (-) TimerEvent: {}
+[11.591414] (-) TimerEvent: {}
+[11.671881] (state_estimator_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/get_blacklist__type_support.cpp.o\x1b[0m\n'}
+[11.691867] (-) TimerEvent: {}
+[11.792686] (-) TimerEvent: {}
+[11.896035] (-) TimerEvent: {}
+[12.000392] (-) TimerEvent: {}
+[12.100911] (-) TimerEvent: {}
+[12.201376] (-) TimerEvent: {}
+[12.304077] (-) TimerEvent: {}
+[12.322155] (state_estimator_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/get_active_estimators__type_support.cpp.o\x1b[0m\n'}
+[12.404295] (-) TimerEvent: {}
+[12.504792] (-) TimerEvent: {}
+[12.607925] (-) TimerEvent: {}
+[12.709828] (-) TimerEvent: {}
+[12.810615] (-) TimerEvent: {}
+[12.911316] (-) TimerEvent: {}
+[13.002153] (state_estimator_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support.cpp.o\x1b[0m\n'}
+[13.011532] (-) TimerEvent: {}
+[13.112019] (-) TimerEvent: {}
+[13.212466] (-) TimerEvent: {}
+[13.313205] (-) TimerEvent: {}
+[13.413914] (-) TimerEvent: {}
+[13.514468] (-) TimerEvent: {}
+[13.615030] (-) TimerEvent: {}
+[13.716768] (state_estimator_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/sensor_fusion__type_support.cpp.o\x1b[0m\n'}
+[13.718385] (-) TimerEvent: {}
+[13.822447] (-) TimerEvent: {}
+[13.928427] (-) TimerEvent: {}
+[14.029013] (-) TimerEvent: {}
+[14.129410] (-) TimerEvent: {}
+[14.229980] (-) TimerEvent: {}
+[14.311230] (state_estimator_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/leg_odometry__type_support.cpp.o\x1b[0m\n'}
+[14.330150] (-) TimerEvent: {}
+[14.430686] (-) TimerEvent: {}
+[14.534805] (-) TimerEvent: {}
+[14.635497] (-) TimerEvent: {}
+[14.736026] (-) TimerEvent: {}
+[14.836575] (-) TimerEvent: {}
+[14.926654] (state_estimator_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/contact_detection__type_support.cpp.o\x1b[0m\n'}
+[14.936741] (-) TimerEvent: {}
+[15.041477] (-) TimerEvent: {}
+[15.142148] (-) TimerEvent: {}
+[15.244412] (-) TimerEvent: {}
+[15.344991] (-) TimerEvent: {}
+[15.445513] (-) TimerEvent: {}
+[15.538638] (state_estimator_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[15.545668] (-) TimerEvent: {}
+[15.646185] (-) TimerEvent: {}
+[15.747574] (-) TimerEvent: {}
+[15.773321] (state_estimator_msgs) StdoutLine: {'line': b'[ 12%] Built target state_estimator_msgs__rosidl_typesupport_introspection_cpp\n'}
+[15.847664] (-) TimerEvent: {}
+[15.948150] (-) TimerEvent: {}
+[16.064696] (-) TimerEvent: {}
+[16.165134] (-) TimerEvent: {}
+[16.258587] (state_estimator_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[16.258946] (state_estimator_msgs) StdoutLine: {'line': b'creating state_estimator_msgs.egg-info\n'}
+[16.263627] (state_estimator_msgs) StdoutLine: {'line': b'writing state_estimator_msgs.egg-info/PKG-INFO\n'}
+[16.265338] (-) TimerEvent: {}
+[16.272518] (state_estimator_msgs) StdoutLine: {'line': b'writing dependency_links to state_estimator_msgs.egg-info/dependency_links.txt\n'}
+[16.272821] (state_estimator_msgs) StdoutLine: {'line': b'writing top-level names to state_estimator_msgs.egg-info/top_level.txt\n'}
+[16.272966] (state_estimator_msgs) StdoutLine: {'line': b"writing manifest file 'state_estimator_msgs.egg-info/SOURCES.txt'\n"}
+[16.277050] (state_estimator_msgs) StdoutLine: {'line': b"reading manifest file 'state_estimator_msgs.egg-info/SOURCES.txt'\n"}
+[16.278485] (state_estimator_msgs) StdoutLine: {'line': b"writing manifest file 'state_estimator_msgs.egg-info/SOURCES.txt'\n"}
+[16.368137] (-) TimerEvent: {}
+[16.443146] (state_estimator_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_build_state_estimator_msgs_egg\n'}
+[16.471357] (-) TimerEvent: {}
+[16.486382] (state_estimator_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[16.572561] (-) TimerEvent: {}
+[16.683575] (-) TimerEvent: {}
+[16.784219] (-) TimerEvent: {}
+[16.885885] (-) TimerEvent: {}
+[16.986717] (-) TimerEvent: {}
+[17.087350] (-) TimerEvent: {}
+[17.187780] (-) TimerEvent: {}
+[17.288303] (-) TimerEvent: {}
+[17.388790] (-) TimerEvent: {}
+[17.489472] (-) TimerEvent: {}
+[17.592084] (-) TimerEvent: {}
+[17.695052] (-) TimerEvent: {}
+[17.795631] (-) TimerEvent: {}
+[17.896071] (-) TimerEvent: {}
+[17.996628] (-) TimerEvent: {}
+[18.097154] (-) TimerEvent: {}
+[18.197559] (-) TimerEvent: {}
+[18.298400] (-) TimerEvent: {}
+[18.398982] (-) TimerEvent: {}
+[18.499585] (-) TimerEvent: {}
+[18.600095] (-) TimerEvent: {}
+[18.610818] (state_estimator_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/attitude__type_support.cpp.o\x1b[0m\n'}
+[18.700435] (-) TimerEvent: {}
+[18.800928] (-) TimerEvent: {}
+[18.902204] (-) TimerEvent: {}
+[19.005248] (-) TimerEvent: {}
+[19.106301] (-) TimerEvent: {}
+[19.207231] (-) TimerEvent: {}
+[19.311273] (-) TimerEvent: {}
+[19.412787] (-) TimerEvent: {}
+[19.499797] (state_estimator_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/list_all_estimators__type_support.cpp.o\x1b[0m\n'}
+[19.517436] (-) TimerEvent: {}
+[19.617876] (-) TimerEvent: {}
+[19.718405] (-) TimerEvent: {}
+[19.819051] (-) TimerEvent: {}
+[19.919784] (-) TimerEvent: {}
+[20.020390] (-) TimerEvent: {}
+[20.121017] (-) TimerEvent: {}
+[20.224357] (-) TimerEvent: {}
+[20.324778] (-) TimerEvent: {}
+[20.351229] (state_estimator_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/pause_estimator__type_support.cpp.o\x1b[0m\n'}
+[20.424949] (-) TimerEvent: {}
+[20.525427] (-) TimerEvent: {}
+[20.625916] (-) TimerEvent: {}
+[20.726431] (-) TimerEvent: {}
+[20.826963] (-) TimerEvent: {}
+[20.927455] (-) TimerEvent: {}
+[20.958999] (state_estimator_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/reset_estimator__type_support.cpp.o\x1b[0m\n'}
+[21.030626] (-) TimerEvent: {}
+[21.131425] (-) TimerEvent: {}
+[21.231784] (-) TimerEvent: {}
+[21.332964] (-) TimerEvent: {}
+[21.433862] (-) TimerEvent: {}
+[21.544389] (-) TimerEvent: {}
+[21.622951] (state_estimator_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/restart_estimator__type_support.cpp.o\x1b[0m\n'}
+[21.644695] (-) TimerEvent: {}
+[21.745773] (-) TimerEvent: {}
+[21.860357] (-) TimerEvent: {}
+[21.960773] (-) TimerEvent: {}
+[22.061274] (-) TimerEvent: {}
+[22.161769] (-) TimerEvent: {}
+[22.262447] (-) TimerEvent: {}
+[22.264036] (state_estimator_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/resume_estimator__type_support.cpp.o\x1b[0m\n'}
+[22.364821] (-) TimerEvent: {}
+[22.465557] (-) TimerEvent: {}
+[22.566267] (-) TimerEvent: {}
+[22.672368] (-) TimerEvent: {}
+[22.772819] (-) TimerEvent: {}
+[22.873227] (-) TimerEvent: {}
+[22.910336] (state_estimator_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/start_estimator__type_support.cpp.o\x1b[0m\n'}
+[22.976306] (-) TimerEvent: {}
+[23.077247] (-) TimerEvent: {}
+[23.180551] (-) TimerEvent: {}
+[23.281046] (-) TimerEvent: {}
+[23.385465] (-) TimerEvent: {}
+[23.488619] (-) TimerEvent: {}
+[23.568430] (state_estimator_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/stop_estimator__type_support.cpp.o\x1b[0m\n'}
+[23.588768] (-) TimerEvent: {}
+[23.689329] (-) TimerEvent: {}
+[23.790125] (-) TimerEvent: {}
+[23.891069] (-) TimerEvent: {}
+[23.997554] (-) TimerEvent: {}
+[24.098091] (-) TimerEvent: {}
+[24.198574] (-) TimerEvent: {}
+[24.294614] (state_estimator_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/get_whitelist__type_support.cpp.o\x1b[0m\n'}
+[24.298862] (-) TimerEvent: {}
+[24.404381] (-) TimerEvent: {}
+[24.509986] (-) TimerEvent: {}
+[24.610441] (-) TimerEvent: {}
+[24.711310] (-) TimerEvent: {}
+[24.812183] (-) TimerEvent: {}
+[24.913973] (-) TimerEvent: {}
+[25.016776] (-) TimerEvent: {}
+[25.073680] (state_estimator_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/get_estimator_description__type_support.cpp.o\x1b[0m\n'}
+[25.116953] (-) TimerEvent: {}
+[25.220456] (-) TimerEvent: {}
+[25.328052] (-) TimerEvent: {}
+[25.428616] (-) TimerEvent: {}
+[25.529045] (-) TimerEvent: {}
+[25.629499] (-) TimerEvent: {}
+[25.727021] (state_estimator_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/get_active_estimators__type_support.cpp.o\x1b[0m\n'}
+[25.730570] (state_estimator_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/joint_state_with_acceleration__type_support.cpp.o\x1b[0m\n'}
+[25.730854] (-) TimerEvent: {}
+[25.734527] (state_estimator_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/get_blacklist__type_support.cpp.o\x1b[0m\n'}
+[25.831036] (-) TimerEvent: {}
+[25.932112] (-) TimerEvent: {}
+[26.036371] (-) TimerEvent: {}
+[26.136853] (-) TimerEvent: {}
+[26.240674] (-) TimerEvent: {}
+[26.341824] (-) TimerEvent: {}
+[26.448649] (-) TimerEvent: {}
+[26.560558] (-) TimerEvent: {}
+[26.664664] (-) TimerEvent: {}
+[26.765187] (-) TimerEvent: {}
+[26.865782] (-) TimerEvent: {}
+[26.963838] (state_estimator_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/sensor_fusion__type_support.cpp.o\x1b[0m\n'}
+[26.969059] (-) TimerEvent: {}
+[26.977603] (state_estimator_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/leg_odometry__type_support.cpp.o\x1b[0m\n'}
+[27.039259] (state_estimator_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/contact_detection__type_support.cpp.o\x1b[0m\n'}
+[27.066327] (-) TimerEvent: {}
+[27.176421] (-) TimerEvent: {}
+[27.280403] (-) TimerEvent: {}
+[27.381396] (-) TimerEvent: {}
+[27.481960] (-) TimerEvent: {}
+[27.583605] (-) TimerEvent: {}
+[27.684155] (-) TimerEvent: {}
+[27.784969] (-) TimerEvent: {}
+[27.819758] (state_estimator_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[27.885141] (-) TimerEvent: {}
+[27.985858] (-) TimerEvent: {}
+[28.047205] (state_estimator_msgs) StdoutLine: {'line': b'[ 24%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[28.074409] (state_estimator_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[28.080707] (state_estimator_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[28.090215] (-) TimerEvent: {}
+[28.190666] (-) TimerEvent: {}
+[28.296378] (-) TimerEvent: {}
+[28.396861] (-) TimerEvent: {}
+[28.498462] (-) TimerEvent: {}
+[28.599525] (-) TimerEvent: {}
+[28.700037] (-) TimerEvent: {}
+[28.801190] (-) TimerEvent: {}
+[28.905793] (-) TimerEvent: {}
+[29.006403] (-) TimerEvent: {}
+[29.112713] (-) TimerEvent: {}
+[29.115068] (state_estimator_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/attitude__type_support.cpp.o\x1b[0m\n'}
+[29.115288] (state_estimator_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/contact_detection__type_support.cpp.o\x1b[0m\n'}
+[29.115373] (state_estimator_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/leg_odometry__type_support.cpp.o\x1b[0m\n'}
+[29.216653] (-) TimerEvent: {}
+[29.317186] (-) TimerEvent: {}
+[29.418487] (-) TimerEvent: {}
+[29.519311] (-) TimerEvent: {}
+[29.598105] (state_estimator_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/pause_estimator__type_support.cpp.o\x1b[0m\n'}
+[29.608084] (state_estimator_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/list_all_estimators__type_support.cpp.o\x1b[0m\n'}
+[29.608561] (state_estimator_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/get_whitelist__type_support.cpp.o\x1b[0m\n'}
+[29.620372] (-) TimerEvent: {}
+[29.624798] (state_estimator_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/restart_estimator__type_support.cpp.o\x1b[0m\n'}
+[29.726984] (-) TimerEvent: {}
+[29.827503] (-) TimerEvent: {}
+[29.929935] (-) TimerEvent: {}
+[30.030669] (-) TimerEvent: {}
+[30.104641] (state_estimator_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/resume_estimator__type_support.cpp.o\x1b[0m\n'}
+[30.132383] (-) TimerEvent: {}
+[30.145481] (state_estimator_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/reset_estimator__type_support.cpp.o\x1b[0m\n'}
+[30.159185] (state_estimator_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/get_estimator_description__type_support.cpp.o\x1b[0m\n'}
+[30.160840] (state_estimator_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/get_blacklist__type_support.cpp.o\x1b[0m\n'}
+[30.168118] (state_estimator_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/start_estimator__type_support.cpp.o\x1b[0m\n'}
+[30.232735] (-) TimerEvent: {}
+[30.333370] (-) TimerEvent: {}
+[30.434833] (-) TimerEvent: {}
+[30.535365] (-) TimerEvent: {}
+[30.636084] (-) TimerEvent: {}
+[30.676447] (state_estimator_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/stop_estimator__type_support.cpp.o\x1b[0m\n'}
+[30.689413] (state_estimator_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/get_active_estimators__type_support.cpp.o\x1b[0m\n'}
+[30.708028] (state_estimator_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/joint_state_with_acceleration__type_support.cpp.o\x1b[0m\n'}
+[30.736474] (-) TimerEvent: {}
+[30.840352] (state_estimator_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/attitude__functions.c.o\x1b[0m\n'}
+[30.840694] (-) TimerEvent: {}
+[30.868525] (state_estimator_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/contact_detection__functions.c.o\x1b[0m\n'}
+[30.905571] (state_estimator_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/sensor_fusion__type_support.cpp.o\x1b[0m\n'}
+[30.944523] (-) TimerEvent: {}
+[31.010250] (state_estimator_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/get_estimator_description__functions.c.o\x1b[0m\n'}
+[31.012307] (state_estimator_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/get_blacklist__functions.c.o\x1b[0m\n'}
+[31.052388] (-) TimerEvent: {}
+[31.140838] (state_estimator_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/list_all_estimators__functions.c.o\x1b[0m\n'}
+[31.152603] (-) TimerEvent: {}
+[31.199911] (state_estimator_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/pause_estimator__functions.c.o\x1b[0m\n'}
+[31.252874] (-) TimerEvent: {}
+[31.290360] (state_estimator_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/resume_estimator__functions.c.o\x1b[0m\n'}
+[31.322406] (state_estimator_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/stop_estimator__functions.c.o\x1b[0m\n'}
+[31.353167] (-) TimerEvent: {}
+[31.415259] (state_estimator_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/start_estimator__functions.c.o\x1b[0m\n'}
+[31.434741] (state_estimator_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/restart_estimator__functions.c.o\x1b[0m\n'}
+[31.456506] (-) TimerEvent: {}
+[31.501981] (state_estimator_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[31.535798] (state_estimator_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/reset_estimator__functions.c.o\x1b[0m\n'}
+[31.539725] (state_estimator_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/get_whitelist__functions.c.o\x1b[0m\n'}
+[31.557303] (-) TimerEvent: {}
+[31.615003] (state_estimator_msgs) StdoutLine: {'line': b'[ 45%] Built target state_estimator_msgs__rosidl_typesupport_cpp\n'}
+[31.643329] (state_estimator_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/get_active_estimators__functions.c.o\x1b[0m\n'}
+[31.653431] (state_estimator_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/joint_state_with_acceleration__functions.c.o\x1b[0m\n'}
+[31.657477] (-) TimerEvent: {}
+[31.757960] (-) TimerEvent: {}
+[31.764057] (state_estimator_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/sensor_fusion__functions.c.o\x1b[0m\n'}
+[31.770131] (state_estimator_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/leg_odometry__functions.c.o\x1b[0m\n'}
+[31.861447] (-) TimerEvent: {}
+[31.875482] (state_estimator_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libstate_estimator_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[31.961599] (-) TimerEvent: {}
+[31.982039] (state_estimator_msgs) StdoutLine: {'line': b'[ 48%] Built target state_estimator_msgs__rosidl_generator_c\n'}
+[32.007232] (state_estimator_msgs) StdoutLine: {'line': b'[ 49%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[32.012454] (state_estimator_msgs) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[32.066562] (-) TimerEvent: {}
+[32.167073] (-) TimerEvent: {}
+[32.267817] (-) TimerEvent: {}
+[32.368343] (-) TimerEvent: {}
+[32.468757] (-) TimerEvent: {}
+[32.572388] (-) TimerEvent: {}
+[32.672848] (-) TimerEvent: {}
+[32.773267] (-) TimerEvent: {}
+[32.873761] (-) TimerEvent: {}
+[32.974108] (-) TimerEvent: {}
+[33.075879] (-) TimerEvent: {}
+[33.182737] (-) TimerEvent: {}
+[33.285775] (-) TimerEvent: {}
+[33.386352] (-) TimerEvent: {}
+[33.486967] (-) TimerEvent: {}
+[33.587596] (-) TimerEvent: {}
+[33.690047] (-) TimerEvent: {}
+[33.736438] (state_estimator_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/attitude__type_support.c.o\x1b[0m\n'}
+[33.742939] (state_estimator_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/contact_detection__type_support.c.o\x1b[0m\n'}
+[33.790211] (-) TimerEvent: {}
+[33.813071] (state_estimator_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/attitude__type_support_c.cpp.o\x1b[0m\n'}
+[33.813348] (state_estimator_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/list_all_estimators__type_support.c.o\x1b[0m\n'}
+[33.814969] (state_estimator_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/contact_detection__type_support_c.cpp.o\x1b[0m\n'}
+[33.823645] (state_estimator_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/get_whitelist__type_support.c.o\x1b[0m\n'}
+[33.890368] (-) TimerEvent: {}
+[33.913941] (state_estimator_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/get_estimator_description__type_support.c.o\x1b[0m\n'}
+[33.988348] (state_estimator_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/get_blacklist__type_support.c.o\x1b[0m\n'}
+[33.990510] (-) TimerEvent: {}
+[34.084180] (state_estimator_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/get_active_estimators__type_support.c.o\x1b[0m\n'}
+[34.090713] (-) TimerEvent: {}
+[34.176045] (state_estimator_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support.c.o\x1b[0m\n'}
+[34.176677] (state_estimator_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/sensor_fusion__type_support.c.o\x1b[0m\n'}
+[34.190330] (state_estimator_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/get_estimator_description__type_support_c.cpp.o\x1b[0m\n'}
+[34.190808] (-) TimerEvent: {}
+[34.272156] (state_estimator_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/leg_odometry__type_support.c.o\x1b[0m\n'}
+[34.283841] (state_estimator_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/pause_estimator__type_support.c.o\x1b[0m\n'}
+[34.293695] (-) TimerEvent: {}
+[34.397440] (-) TimerEvent: {}
+[34.402900] (state_estimator_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/reset_estimator__type_support.c.o\x1b[0m\n'}
+[34.418930] (state_estimator_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/list_all_estimators__type_support_c.cpp.o\x1b[0m\n'}
+[34.492454] (state_estimator_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/get_whitelist__type_support_c.cpp.o\x1b[0m\n'}
+[34.496565] (state_estimator_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/resume_estimator__type_support.c.o\x1b[0m\n'}
+[34.497558] (-) TimerEvent: {}
+[34.592381] (state_estimator_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/restart_estimator__type_support.c.o\x1b[0m\n'}
+[34.597770] (-) TimerEvent: {}
+[34.669504] (state_estimator_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/start_estimator__type_support.c.o\x1b[0m\n'}
+[34.697946] (-) TimerEvent: {}
+[34.756391] (state_estimator_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/stop_estimator__type_support.c.o\x1b[0m\n'}
+[34.798203] (-) TimerEvent: {}
+[34.838887] (state_estimator_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libstate_estimator_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[34.849931] (state_estimator_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/reset_estimator__type_support_c.cpp.o\x1b[0m\n'}
+[34.898369] (-) TimerEvent: {}
+[34.938974] (state_estimator_msgs) StdoutLine: {'line': b'[ 65%] Built target state_estimator_msgs__rosidl_typesupport_introspection_c\n'}
+[34.972945] (state_estimator_msgs) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[34.998536] (-) TimerEvent: {}
+[35.031528] (state_estimator_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/resume_estimator__type_support_c.cpp.o\x1b[0m\n'}
+[35.100357] (-) TimerEvent: {}
+[35.165646] (state_estimator_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/start_estimator__type_support_c.cpp.o\x1b[0m\n'}
+[35.228396] (state_estimator_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/restart_estimator__type_support_c.cpp.o\x1b[0m\n'}
+[35.228778] (-) TimerEvent: {}
+[35.338028] (-) TimerEvent: {}
+[35.438483] (-) TimerEvent: {}
+[35.543017] (-) TimerEvent: {}
+[35.643523] (-) TimerEvent: {}
+[35.751777] (-) TimerEvent: {}
+[35.852321] (-) TimerEvent: {}
+[35.869093] (state_estimator_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/stop_estimator__type_support_c.cpp.o\x1b[0m\n'}
+[35.952610] (-) TimerEvent: {}
+[36.053255] (-) TimerEvent: {}
+[36.163127] (-) TimerEvent: {}
+[36.263751] (-) TimerEvent: {}
+[36.365693] (-) TimerEvent: {}
+[36.466297] (-) TimerEvent: {}
+[36.566868] (-) TimerEvent: {}
+[36.594101] (state_estimator_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/attitude__type_support.cpp.o\x1b[0m\n'}
+[36.667087] (-) TimerEvent: {}
+[36.705541] (state_estimator_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/joint_state_with_acceleration__type_support.cpp.o\x1b[0m\n'}
+[36.767237] (-) TimerEvent: {}
+[36.812657] (state_estimator_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/get_active_estimators__type_support.cpp.o\x1b[0m\n'}
+[36.867449] (-) TimerEvent: {}
+[36.881252] (state_estimator_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/get_blacklist__type_support.cpp.o\x1b[0m\n'}
+[36.950839] (state_estimator_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/get_estimator_description__type_support.cpp.o\x1b[0m\n'}
+[36.967623] (-) TimerEvent: {}
+[36.968103] (state_estimator_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/pause_estimator__type_support_c.cpp.o\x1b[0m\n'}
+[37.037609] (state_estimator_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/list_all_estimators__type_support.cpp.o\x1b[0m\n'}
+[37.067864] (-) TimerEvent: {}
+[37.103683] (state_estimator_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/pause_estimator__type_support.cpp.o\x1b[0m\n'}
+[37.174709] (-) TimerEvent: {}
+[37.188500] (state_estimator_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/reset_estimator__type_support.cpp.o\x1b[0m\n'}
+[37.261709] (state_estimator_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/restart_estimator__type_support.cpp.o\x1b[0m\n'}
+[37.274949] (-) TimerEvent: {}
+[37.362065] (state_estimator_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/resume_estimator__type_support.cpp.o\x1b[0m\n'}
+[37.375222] (-) TimerEvent: {}
+[37.441718] (state_estimator_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/start_estimator__type_support.cpp.o\x1b[0m\n'}
+[37.475438] (-) TimerEvent: {}
+[37.512472] (state_estimator_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/stop_estimator__type_support.cpp.o\x1b[0m\n'}
+[37.575622] (-) TimerEvent: {}
+[37.577128] (state_estimator_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/get_whitelist__type_support.cpp.o\x1b[0m\n'}
+[37.653804] (state_estimator_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/sensor_fusion__type_support.cpp.o\x1b[0m\n'}
+[37.657061] (state_estimator_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/get_blacklist__type_support_c.cpp.o\x1b[0m\n'}
+[37.692381] (-) TimerEvent: {}
+[37.715067] (state_estimator_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/leg_odometry__type_support.cpp.o\x1b[0m\n'}
+[37.783361] (state_estimator_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/contact_detection__type_support.cpp.o\x1b[0m\n'}
+[37.792821] (-) TimerEvent: {}
+[37.850849] (state_estimator_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[37.893104] (-) TimerEvent: {}
+[37.971820] (state_estimator_msgs) StdoutLine: {'line': b'[ 80%] Built target state_estimator_msgs__rosidl_typesupport_c\n'}
+[37.996408] (-) TimerEvent: {}
+[38.099005] (-) TimerEvent: {}
+[38.200010] (-) TimerEvent: {}
+[38.275533] (state_estimator_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/get_active_estimators__type_support_c.cpp.o\x1b[0m\n'}
+[38.300143] (-) TimerEvent: {}
+[38.400618] (-) TimerEvent: {}
+[38.501102] (-) TimerEvent: {}
+[38.604406] (-) TimerEvent: {}
+[38.711127] (-) TimerEvent: {}
+[38.818386] (-) TimerEvent: {}
+[38.868326] (state_estimator_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support_c.cpp.o\x1b[0m\n'}
+[38.918533] (-) TimerEvent: {}
+[39.018984] (-) TimerEvent: {}
+[39.119566] (-) TimerEvent: {}
+[39.220098] (-) TimerEvent: {}
+[39.321026] (-) TimerEvent: {}
+[39.428526] (-) TimerEvent: {}
+[39.501386] (state_estimator_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/sensor_fusion__type_support_c.cpp.o\x1b[0m\n'}
+[39.539326] (-) TimerEvent: {}
+[39.644063] (-) TimerEvent: {}
+[39.744640] (-) TimerEvent: {}
+[39.845129] (-) TimerEvent: {}
+[39.950602] (-) TimerEvent: {}
+[40.051042] (-) TimerEvent: {}
+[40.052681] (state_estimator_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/leg_odometry__type_support_c.cpp.o\x1b[0m\n'}
+[40.151236] (-) TimerEvent: {}
+[40.251646] (-) TimerEvent: {}
+[40.352116] (-) TimerEvent: {}
+[40.453482] (-) TimerEvent: {}
+[40.554182] (-) TimerEvent: {}
+[40.608568] (state_estimator_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[40.654378] (-) TimerEvent: {}
+[40.758369] (-) TimerEvent: {}
+[40.787656] (state_estimator_msgs) StdoutLine: {'line': b'[ 84%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_c\n'}
+[40.832788] (state_estimator_msgs) StdoutLine: {'line': b'[ 84%] Built target state_estimator_msgs\n'}
+[40.859822] (-) TimerEvent: {}
+[40.889655] (state_estimator_msgs) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[40.960941] (-) TimerEvent: {}
+[41.061406] (-) TimerEvent: {}
+[41.165709] (-) TimerEvent: {}
+[41.266532] (-) TimerEvent: {}
+[41.369498] (-) TimerEvent: {}
+[41.469945] (-) TimerEvent: {}
+[41.570590] (-) TimerEvent: {}
+[41.671124] (-) TimerEvent: {}
+[41.771651] (-) TimerEvent: {}
+[41.872105] (-) TimerEvent: {}
+[41.972657] (-) TimerEvent: {}
+[42.075618] (-) TimerEvent: {}
+[42.176563] (-) TimerEvent: {}
+[42.277128] (-) TimerEvent: {}
+[42.378114] (-) TimerEvent: {}
+[42.480424] (-) TimerEvent: {}
+[42.580822] (-) TimerEvent: {}
+[42.681323] (-) TimerEvent: {}
+[42.781916] (-) TimerEvent: {}
+[42.882897] (-) TimerEvent: {}
+[42.988428] (-) TimerEvent: {}
+[43.089010] (-) TimerEvent: {}
+[43.189610] (-) TimerEvent: {}
+[43.290116] (-) TimerEvent: {}
+[43.392364] (-) TimerEvent: {}
+[43.492840] (-) TimerEvent: {}
+[43.596436] (-) TimerEvent: {}
+[43.697655] (-) TimerEvent: {}
+[43.798087] (-) TimerEvent: {}
+[43.898587] (-) TimerEvent: {}
+[43.999153] (-) TimerEvent: {}
+[44.104604] (-) TimerEvent: {}
+[44.205160] (-) TimerEvent: {}
+[44.305748] (-) TimerEvent: {}
+[44.406281] (-) TimerEvent: {}
+[44.507330] (-) TimerEvent: {}
+[44.554250] (state_estimator_msgs) StdoutLine: {'line': b'[ 85%] Built target state_estimator_msgs__py\n'}
+[44.600487] (state_estimator_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_attitude_s.c.o\x1b[0m\n'}
+[44.607520] (-) TimerEvent: {}
+[44.708010] (-) TimerEvent: {}
+[44.811304] (-) TimerEvent: {}
+[44.876546] (state_estimator_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_reset_estimator_s.c.o\x1b[0m\n'}
+[44.911531] (-) TimerEvent: {}
+[45.012623] (-) TimerEvent: {}
+[45.065627] (state_estimator_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_restart_estimator_s.c.o\x1b[0m\n'}
+[45.112802] (-) TimerEvent: {}
+[45.213703] (-) TimerEvent: {}
+[45.297901] (state_estimator_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_resume_estimator_s.c.o\x1b[0m\n'}
+[45.298253] (state_estimator_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_pause_estimator_s.c.o\x1b[0m\n'}
+[45.313867] (-) TimerEvent: {}
+[45.414534] (-) TimerEvent: {}
+[45.500088] (state_estimator_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_start_estimator_s.c.o\x1b[0m\n'}
+[45.504611] (state_estimator_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_stop_estimator_s.c.o\x1b[0m\n'}
+[45.514703] (-) TimerEvent: {}
+[45.615605] (-) TimerEvent: {}
+[45.716055] (state_estimator_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_list_all_estimators_s.c.o\x1b[0m\n'}
+[45.716383] (-) TimerEvent: {}
+[45.822642] (-) TimerEvent: {}
+[45.901910] (state_estimator_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_get_whitelist_s.c.o\x1b[0m\n'}
+[45.925684] (-) TimerEvent: {}
+[46.028101] (-) TimerEvent: {}
+[46.132623] (-) TimerEvent: {}
+[46.166876] (state_estimator_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_get_blacklist_s.c.o\x1b[0m\n'}
+[46.175613] (state_estimator_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_get_estimator_description_s.c.o\x1b[0m\n'}
+[46.232835] (-) TimerEvent: {}
+[46.335140] (-) TimerEvent: {}
+[46.436049] (-) TimerEvent: {}
+[46.490908] (state_estimator_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_get_active_estimators_s.c.o\x1b[0m\n'}
+[46.491276] (state_estimator_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_joint_state_with_acceleration_s.c.o\x1b[0m\n'}
+[46.536312] (-) TimerEvent: {}
+[46.643105] (-) TimerEvent: {}
+[46.743701] (-) TimerEvent: {}
+[46.766616] (state_estimator_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_sensor_fusion_s.c.o\x1b[0m\n'}
+[46.812528] (state_estimator_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_leg_odometry_s.c.o\x1b[0m\n'}
+[46.843890] (-) TimerEvent: {}
+[46.946167] (-) TimerEvent: {}
+[46.952509] (state_estimator_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_contact_detection_s.c.o\x1b[0m\n'}
+[47.046361] (-) TimerEvent: {}
+[47.128457] (state_estimator_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/state_estimator_msgs/libstate_estimator_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[47.146525] (-) TimerEvent: {}
+[47.230163] (state_estimator_msgs) StdoutLine: {'line': b'[ 96%] Built target state_estimator_msgs__rosidl_generator_py\n'}
+[47.249787] (-) TimerEvent: {}
+[47.273623] (state_estimator_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[47.274004] (state_estimator_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[47.350370] (-) TimerEvent: {}
+[47.460400] (-) TimerEvent: {}
+[47.560980] (-) TimerEvent: {}
+[47.598495] (state_estimator_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[47.605633] (state_estimator_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[47.661218] (-) TimerEvent: {}
+[47.697708] (state_estimator_msgs) StdoutLine: {'line': b'[ 99%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[47.701370] (state_estimator_msgs) StdoutLine: {'line': b'[ 99%] Built target state_estimator_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[47.741949] (state_estimator_msgs) StdoutLine: {'line': b'[100%] \x1b[32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[47.761361] (-) TimerEvent: {}
+[47.864400] (-) TimerEvent: {}
+[47.964858] (-) TimerEvent: {}
+[48.027119] (state_estimator_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[48.065073] (-) TimerEvent: {}
+[48.115356] (state_estimator_msgs) StdoutLine: {'line': b'[100%] Built target state_estimator_msgs__rosidl_typesupport_c__pyext\n'}
+[48.141528] (state_estimator_msgs) JobEnded: {'identifier': 'state_estimator_msgs', 'rc': 'SIGINT'}
+[48.154129] (state_estimator) JobSkipped: {'identifier': 'state_estimator'}
+[48.154217] (-) EventReactorShutdown: {}

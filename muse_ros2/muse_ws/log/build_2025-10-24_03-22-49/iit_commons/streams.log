@@ -1,0 +1,106 @@
+[0.036s] Invoking command in '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12
+[0.146s] [  9%] Built target gtest
+[0.149s] [ 19%] Built target gtest_main
+[0.154s] [ 42%] Built target iitcommons
+[0.195s] [35m[1mConsolidate compiler generated dependencies of target vm-test[0m
+[0.226s] [ 52%] [32mBuilding CXX object CMakeFiles/algebra-test.dir/src/algebra_test.cpp.o[0m
+[0.228s] [ 52%] [32mBuilding CXX object CMakeFiles/legboolmap-test.dir/src/legboolmap_test.cpp.o[0m
+[0.245s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/legboolmap_test.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kiit/commons/dog/leg_bool_map.h: No such file or directory
+[0.245s]     1 | #include [01;31m[K<iit/commons/dog/leg_bool_map.h>[m[K
+[0.245s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.245s] compilation terminated.
+[0.245s] [ 57%] [32mBuilding CXX object CMakeFiles/filt-test.dir/src/test-filters.cpp.o[0m
+[0.247s] gmake[2]: *** [CMakeFiles/legboolmap-test.dir/build.make:76: CMakeFiles/legboolmap-test.dir/src/legboolmap_test.cpp.o] Error 1
+[0.247s] [ 61%] [32mBuilding CXX object CMakeFiles/planning-test.dir/src/planning_test.cpp.o[0m
+[0.251s] gmake[1]: *** [CMakeFiles/Makefile2:278: CMakeFiles/legboolmap-test.dir/all] Error 2
+[0.251s] gmake[1]: *** Waiting for unfinished jobs....
+[0.261s] [ 66%] [32mBuilding CXX object CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o[0m
+[0.274s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/planning_test.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kiit/commons/planning/planning.h: No such file or directory
+[0.274s]     1 | #include [01;31m[K"iit/commons/planning/planning.h"[m[K
+[0.275s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.275s] compilation terminated.
+[0.275s] gmake[2]: *** [CMakeFiles/planning-test.dir/build.make:76: CMakeFiles/planning-test.dir/src/planning_test.cpp.o] Error 1
+[0.275s] gmake[1]: *** [CMakeFiles/Makefile2:306: CMakeFiles/planning-test.dir/all] Error 2
+[1.942s] [ 71%] [32m[1mLinking CXX executable filt-test[0m
+[2.252s] [ 71%] Built target filt-test
+[2.252s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/algebra_test.cpp:1[m[K:
+[2.252s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:[m[K In function ‘[01m[Kvoid iit::commons::computeQR(const MatrixXR&, MatrixXR&, MatrixXR&, const double&)[m[K’:
+[2.252s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:271:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktolerance[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.253s]   271 |                       [01;35m[Kconst double& tolerance[m[K)
+[2.253s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[2.618s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:10[m[K:
+[2.619s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/dog/jsim.h:16:66:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState[m[K’ is not a member of ‘[01m[Kiit::dog[m[K’; did you mean ‘[01m[Kiit_commons::dog::JointState[m[K’?
+[2.619s]    16 | class JSIMBase : public iit::rbd::StateDependentMatrix<iit::dog::[01;31m[KJointState[m[K, 18, 18, JSIMBase>
+[2.619s]       |                                                                  [01;31m[K^~~~~~~~~~[m[K
+[2.619s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:9[m[K:
+[2.619s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/dog/declarations.h:26:19:[m[K [01;36m[Knote: [m[K‘[01m[Kiit_commons::dog::JointState[m[K’ declared here
+[2.619s]    26 | typedef Column12d [01;36m[KJointState[m[K;
+[2.619s]       |                   [01;36m[K^~~~~~~~~~[m[K
+[2.619s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:10[m[K:
+[2.619s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/dog/jsim.h:16:94:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.619s]    16 | class JSIMBase : public iit::rbd::StateDependentMatrix<iit::dog::JointState, 18, 18, JSIMBase[01;31m[K>[m[K
+[2.619s]       |                                                                                              [01;31m[K^[m[K
+[2.619s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/dog/jsim.h:26:52:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState[m[K’ in namespace ‘[01m[Kiit::dog[m[K’ does not name a type
+[2.620s]    26 |     virtual const JSIMBase& update(const iit::dog::[01;31m[KJointState[m[K&) = 0;
+[2.620s]       |                                                    [01;31m[K^~~~~~~~~~[m[K
+[3.069s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:5[m[K,
+[3.070s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:6[m[K,
+[3.070s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7[m[K,
+[3.070s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14[m[K:
+[3.070s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:[m[K In function ‘[01m[Kvoid iit::commons::computeQR(const MatrixXR&, MatrixXR&, MatrixXR&, const double&)[m[K’:
+[3.070s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:271:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktolerance[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.070s]   271 |                       [01;35m[Kconst double& tolerance[m[K)
+[3.070s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[3.115s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:6[m[K,
+[3.115s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7[m[K,
+[3.115s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14[m[K:
+[3.115s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:[m[K In function ‘[01m[KEigen::Matrix3d iit::commons::rpyToEar(const Vector3d&)[m[K’:
+[3.115s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:143:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.115s]   143 |     double [01;35m[Kyaw[m[K = rpy(2);
+[3.115s]       |            [01;35m[K^~~[m[K
+[3.116s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:[m[K In function ‘[01m[KEigen::Matrix3d iit::commons::rpyToEarInv_dot(const Vector3d&, const Vector3d&)[m[K’:
+[3.116s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:163:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kroll[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.116s]   163 |     double [01;35m[Kroll[m[K = rpy(0);
+[3.116s]       |            [01;35m[K^~~~[m[K
+[3.117s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:166:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krolld[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.117s]   166 |     double [01;35m[Krolld[m[K = rpyd(0);
+[3.117s]       |            [01;35m[K^~~~~[m[K
+[4.293s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7[m[K,
+[4.293s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14[m[K:
+[4.293s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::ClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[4.293s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:162:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.294s]   162 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.294s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.294s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:163:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.294s]   163 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.294s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[4.294s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[4.294s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:186:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.294s]   186 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.295s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.295s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:187:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.295s]   187 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.295s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[4.295s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<int>&)[m[K’:
+[4.295s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:211:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.295s]   211 |     for (int i = 0; [01;35m[Ki < p.size()[m[K; i++)
+[4.296s]       |                     [01;35m[K~~^~~~~~~~~~[m[K
+[4.299s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:213:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.299s]   213 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.300s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.300s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:214:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.300s]   214 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.300s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[18.966s] [ 76%] [32m[1mLinking CXX executable algebra-test[0m
+[19.245s] [ 76%] Built target algebra-test
+[30.419s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K At global scope:
+[30.419s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:207:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<int>&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[30.420s]   207 | static void [01;35m[KCounterClockwiseSort[m[K(std::vector<Eigen::Vector3d>& p, std::vector<int> & index_map)
+[30.420s]       |             [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[30.420s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:158:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid iit::planning::ClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[30.420s]   158 | static void [01;35m[KClockwiseSort[m[K(std::vector<Eigen::Vector3d>& p)
+[30.420s]       |             [01;35m[K^~~~~~~~~~~~~[m[K
+[30.600s] gmake[2]: *** [CMakeFiles/vm-test.dir/build.make:76: CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o] Error 1
+[30.600s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/vm-test.dir/all] Error 2
+[30.601s] gmake: *** [Makefile:146: all] Error 2
+[30.614s] Invoked command in '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12

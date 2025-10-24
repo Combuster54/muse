@@ -1,0 +1,974 @@
+[0.000000] (-) TimerEvent: {}
+[0.000441] (iit_commons) JobQueued: {'identifier': 'iit_commons', 'dependencies': OrderedDict()}
+[0.000682] (state_estimator_msgs) JobQueued: {'identifier': 'state_estimator_msgs', 'dependencies': OrderedDict()}
+[0.000726] (state_estimator) JobQueued: {'identifier': 'state_estimator', 'dependencies': OrderedDict([('state_estimator_msgs', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs')])}
+[0.000776] (state_estimator_msgs) JobStarted: {'identifier': 'state_estimator_msgs'}
+[0.010525] (iit_commons) JobStarted: {'identifier': 'iit_commons'}
+[0.023223] (state_estimator_msgs) JobProgress: {'identifier': 'state_estimator_msgs', 'progress': 'cmake'}
+[0.025333] (state_estimator_msgs) JobProgress: {'identifier': 'state_estimator_msgs', 'progress': 'build'}
+[0.025535] (state_estimator_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs', '--', '-j12', '-l12'], 'cwd': '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', '0fa4e54b97e2'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/muse_ws/muse_ros2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/dev_ws/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble')]), 'shell': False}
+[0.049667] (iit_commons) JobProgress: {'identifier': 'iit_commons', 'progress': 'cmake'}
+[0.050166] (iit_commons) JobProgress: {'identifier': 'iit_commons', 'progress': 'build'}
+[0.050756] (iit_commons) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons', '--', '-j12', '-l12'], 'cwd': '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', '0fa4e54b97e2'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/muse_ws/muse_ros2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/dev_ws/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble')]), 'shell': False}
+[0.101121] (-) TimerEvent: {}
+[0.164532] (iit_commons) StdoutLine: {'line': b'[  9%] Built target gtest\n'}
+[0.170416] (iit_commons) StdoutLine: {'line': b'[ 33%] Built target iitcommons\n'}
+[0.176164] (state_estimator_msgs) StdoutLine: {'line': b'[  0%] Built target state_estimator_msgs__cpp\n'}
+[0.182186] (state_estimator_msgs) StdoutLine: {'line': b'[ 12%] Built target state_estimator_msgs__rosidl_generator_c\n'}
+[0.184875] (iit_commons) StdoutLine: {'line': b'[ 42%] Built target gtest_main\n'}
+[0.201920] (-) TimerEvent: {}
+[0.221808] (iit_commons) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vm-test\x1b[0m\n'}
+[0.222060] (state_estimator_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_state_estimator_msgs\n'}
+[0.245082] (state_estimator_msgs) StdoutLine: {'line': b'[ 36%] Built target state_estimator_msgs__rosidl_typesupport_cpp\n'}
+[0.245465] (state_estimator_msgs) StdoutLine: {'line': b'[ 36%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.267144] (iit_commons) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o\x1b[0m\n'}
+[0.268009] (iit_commons) StdoutLine: {'line': b'[ 57%] Built target algebra-test\n'}
+[0.285099] (state_estimator_msgs) StdoutLine: {'line': b'[ 48%] Built target state_estimator_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.302071] (-) TimerEvent: {}
+[0.309785] (state_estimator_msgs) StdoutLine: {'line': b'[ 60%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.313243] (iit_commons) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/rotation-test.dir/src/rotation_test.cpp.o\x1b[0m\n'}
+[0.361163] (state_estimator_msgs) StdoutLine: {'line': b'[ 72%] Built target state_estimator_msgs__rosidl_typesupport_c\n'}
+[0.394562] (state_estimator_msgs) StdoutLine: {'line': b'[ 84%] Built target state_estimator_msgs__rosidl_typesupport_introspection_c\n'}
+[0.404859] (-) TimerEvent: {}
+[0.460368] (state_estimator_msgs) StdoutLine: {'line': b'[ 84%] Built target state_estimator_msgs\n'}
+[0.511314] (-) TimerEvent: {}
+[0.522753] (state_estimator_msgs) StdoutLine: {'line': b'[ 85%] Built target state_estimator_msgs__py\n'}
+[0.559076] (state_estimator_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.560671] (state_estimator_msgs) StdoutLine: {'line': b'writing state_estimator_msgs.egg-info/PKG-INFO\n'}
+[0.561172] (state_estimator_msgs) StdoutLine: {'line': b'writing dependency_links to state_estimator_msgs.egg-info/dependency_links.txt\n'}
+[0.561779] (state_estimator_msgs) StdoutLine: {'line': b'writing top-level names to state_estimator_msgs.egg-info/top_level.txt\n'}
+[0.566372] (state_estimator_msgs) StdoutLine: {'line': b"reading manifest file 'state_estimator_msgs.egg-info/SOURCES.txt'\n"}
+[0.567308] (state_estimator_msgs) StdoutLine: {'line': b"writing manifest file 'state_estimator_msgs.egg-info/SOURCES.txt'\n"}
+[0.611427] (-) TimerEvent: {}
+[0.614499] (state_estimator_msgs) StdoutLine: {'line': b'[ 96%] Built target state_estimator_msgs__rosidl_generator_py\n'}
+[0.647183] (state_estimator_msgs) StdoutLine: {'line': b'[ 96%] Built target ament_cmake_python_build_state_estimator_msgs_egg\n'}
+[0.669109] (state_estimator_msgs) StdoutLine: {'line': b'[ 97%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.689324] (state_estimator_msgs) StdoutLine: {'line': b'[ 99%] Built target state_estimator_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.705470] (state_estimator_msgs) StdoutLine: {'line': b'[100%] Built target state_estimator_msgs__rosidl_typesupport_c__pyext\n'}
+[0.711600] (-) TimerEvent: {}
+[0.733049] (state_estimator_msgs) CommandEnded: {'returncode': 0}
+[0.734622] (state_estimator_msgs) JobProgress: {'identifier': 'state_estimator_msgs', 'progress': 'install'}
+[0.756069] (state_estimator_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs'], 'cwd': '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', '0fa4e54b97e2'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/muse_ws/muse_ros2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/dev_ws/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble')]), 'shell': False}
+[0.771779] (state_estimator_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.772313] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/ament_index/resource_index/rosidl_interfaces/state_estimator_msgs\n'}
+[0.772475] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs\n'}
+[0.772596] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv\n'}
+[0.772700] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/get_blacklist.h\n'}
+[0.774569] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/reset_estimator.h\n'}
+[0.774826] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/stop_estimator.h\n'}
+[0.775037] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/restart_estimator.h\n'}
+[0.775188] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/get_whitelist.h\n'}
+[0.775341] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail\n'}
+[0.775420] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__functions.c\n'}
+[0.775507] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__functions.c\n'}
+[0.775588] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__struct.h\n'}
+[0.775699] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__functions.h\n'}
+[0.775845] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__functions.h\n'}
+[0.775944] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__type_support.h\n'}
+[0.776035] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__functions.c\n'}
+[0.776116] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__functions.h\n'}
+[0.776222] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__functions.c\n'}
+[0.776349] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__functions.h\n'}
+[0.776513] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__functions.h\n'}
+[0.776625] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__functions.c\n'}
+[0.776766] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__struct.h\n'}
+[0.777217] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__functions.c\n'}
+[0.777332] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__functions.c\n'}
+[0.777428] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__functions.c\n'}
+[0.777529] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__type_support.h\n'}
+[0.777633] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__type_support.h\n'}
+[0.782125] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__type_support.h\n'}
+[0.782305] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__functions.h\n'}
+[0.782423] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__functions.h\n'}
+[0.782512] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__functions.h\n'}
+[0.782623] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__type_support.h\n'}
+[0.782745] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__struct.h\n'}
+[0.782920] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__struct.h\n'}
+[0.783085] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__functions.c\n'}
+[0.783228] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__type_support.h\n'}
+[0.783342] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__type_support.h\n'}
+[0.783449] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__functions.h\n'}
+[0.783554] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__functions.c\n'}
+[0.783680] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__type_support.h\n'}
+[0.783790] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__struct.h\n'}
+[0.783910] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__functions.c\n'}
+[0.784043] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__struct.h\n'}
+[0.784134] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__struct.h\n'}
+[0.784223] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__struct.h\n'}
+[0.784350] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__struct.h\n'}
+[0.784483] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__functions.h\n'}
+[0.784586] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__type_support.h\n'}
+[0.784677] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__type_support.h\n'}
+[0.784765] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__struct.h\n'}
+[0.784883] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__struct.h\n'}
+[0.785047] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__functions.h\n'}
+[0.785564] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__type_support.h\n'}
+[0.785706] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/get_active_estimators.h\n'}
+[0.785832] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/resume_estimator.h\n'}
+[0.786029] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/start_estimator.h\n'}
+[0.786151] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/get_estimator_description.h\n'}
+[0.786298] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/pause_estimator.h\n'}
+[0.786495] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/list_all_estimators.h\n'}
+[0.786588] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg\n'}
+[0.786669] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/sensor_fusion.h\n'}
+[0.786739] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail\n'}
+[0.786816] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__type_support.h\n'}
+[0.786910] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__struct.h\n'}
+[0.787066] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__struct.h\n'}
+[0.787173] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__functions.c\n'}
+[0.787321] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__struct.h\n'}
+[0.787633] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__functions.h\n'}
+[0.787749] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__type_support.h\n'}
+[0.787832] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__functions.c\n'}
+[0.787911] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__functions.c\n'}
+[0.788046] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__type_support.h\n'}
+[0.788250] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__functions.c\n'}
+[0.788585] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__functions.h\n'}
+[0.788852] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__functions.h\n'}
+[0.789066] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__functions.h\n'}
+[0.789405] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__type_support.h\n'}
+[0.789507] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support.h\n'}
+[0.789628] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__struct.h\n'}
+[0.789722] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__functions.c\n'}
+[0.789875] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__struct.h\n'}
+[0.790006] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__functions.h\n'}
+[0.790292] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/joint_state_with_acceleration.h\n'}
+[0.790402] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/leg_odometry.h\n'}
+[0.790495] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.790592] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/contact_detection.h\n'}
+[0.802068] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/attitude.h\n'}
+[0.802318] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/environment/library_path.sh\n'}
+[0.802496] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/environment/library_path.dsv\n'}
+[0.802585] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib/libstate_estimator_msgs__rosidl_generator_c.so\n'}
+[0.802669] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs\n'}
+[0.802753] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv\n'}
+[0.802844] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail\n'}
+[0.802985] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__rosidl_typesupport_fastrtps_c.h\n'}
+[0.803106] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__rosidl_typesupport_fastrtps_c.h\n'}
+[0.803375] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__rosidl_typesupport_fastrtps_c.h\n'}
+[0.804422] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__rosidl_typesupport_fastrtps_c.h\n'}
+[0.804695] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__rosidl_typesupport_fastrtps_c.h\n'}
+[0.804898] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__rosidl_typesupport_fastrtps_c.h\n'}
+[0.806385] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__rosidl_typesupport_fastrtps_c.h\n'}
+[0.806614] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__rosidl_typesupport_fastrtps_c.h\n'}
+[0.806743] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__rosidl_typesupport_fastrtps_c.h\n'}
+[0.806922] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__rosidl_typesupport_fastrtps_c.h\n'}
+[0.807028] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__rosidl_typesupport_fastrtps_c.h\n'}
+[0.807235] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg\n'}
+[0.807380] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail\n'}
+[0.807512] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__rosidl_typesupport_fastrtps_c.h\n'}
+[0.807606] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__rosidl_typesupport_fastrtps_c.h\n'}
+[0.807728] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__rosidl_typesupport_fastrtps_c.h\n'}
+[0.807826] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__rosidl_typesupport_fastrtps_c.h\n'}
+[0.808055] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__rosidl_typesupport_fastrtps_c.h\n'}
+[0.808272] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.808482] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib/libstate_estimator_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.808606] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs\n'}
+[0.808717] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv\n'}
+[0.808826] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/list_all_estimators.hpp\n'}
+[0.809037] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/resume_estimator.hpp\n'}
+[0.809180] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/pause_estimator.hpp\n'}
+[0.809352] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/reset_estimator.hpp\n'}
+[0.809502] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/get_active_estimators.hpp\n'}
+[0.809909] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail\n'}
+[0.810016] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__type_support.hpp\n'}
+[0.810110] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__type_support.hpp\n'}
+[0.810185] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__traits.hpp\n'}
+[0.810258] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__traits.hpp\n'}
+[0.810347] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__builder.hpp\n'}
+[0.810428] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__traits.hpp\n'}
+[0.810501] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__builder.hpp\n'}
+[0.811368] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__builder.hpp\n'}
+[0.811488] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__type_support.hpp\n'}
+[0.811634] (-) TimerEvent: {}
+[0.811810] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__builder.hpp\n'}
+[0.812217] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__traits.hpp\n'}
+[0.812557] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__type_support.hpp\n'}
+[0.812955] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__type_support.hpp\n'}
+[0.813128] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__type_support.hpp\n'}
+[0.815963] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__builder.hpp\n'}
+[0.816291] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__struct.hpp\n'}
+[0.816463] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__traits.hpp\n'}
+[0.816602] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__type_support.hpp\n'}
+[0.816720] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__traits.hpp\n'}
+[0.816881] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__builder.hpp\n'}
+[0.817021] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__builder.hpp\n'}
+[0.817157] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__type_support.hpp\n'}
+[0.817284] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__type_support.hpp\n'}
+[0.817390] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__struct.hpp\n'}
+[0.817486] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__type_support.hpp\n'}
+[0.817644] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__type_support.hpp\n'}
+[0.817737] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__builder.hpp\n'}
+[0.817827] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__struct.hpp\n'}
+[0.817915] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__builder.hpp\n'}
+[0.817991] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__traits.hpp\n'}
+[0.818080] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__struct.hpp\n'}
+[0.818176] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__traits.hpp\n'}
+[0.818263] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__struct.hpp\n'}
+[0.818358] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__traits.hpp\n'}
+[0.818436] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__builder.hpp\n'}
+[0.818528] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__traits.hpp\n'}
+[0.818705] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__traits.hpp\n'}
+[0.818868] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__struct.hpp\n'}
+[0.819196] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__struct.hpp\n'}
+[0.819557] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__struct.hpp\n'}
+[0.819728] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__struct.hpp\n'}
+[0.819871] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__struct.hpp\n'}
+[0.820045] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__builder.hpp\n'}
+[0.820527] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__struct.hpp\n'}
+[0.820657] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/restart_estimator.hpp\n'}
+[0.820773] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/stop_estimator.hpp\n'}
+[0.820985] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/get_whitelist.hpp\n'}
+[0.821211] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/get_estimator_description.hpp\n'}
+[0.821327] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/get_blacklist.hpp\n'}
+[0.821790] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/start_estimator.hpp\n'}
+[0.821877] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg\n'}
+[0.821959] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/joint_state_with_acceleration.hpp\n'}
+[0.822040] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/contact_detection.hpp\n'}
+[0.822118] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail\n'}
+[0.822194] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__builder.hpp\n'}
+[0.822283] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__struct.hpp\n'}
+[0.822368] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__type_support.hpp\n'}
+[0.822502] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__traits.hpp\n'}
+[0.822591] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__type_support.hpp\n'}
+[0.822692] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__traits.hpp\n'}
+[0.822773] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__builder.hpp\n'}
+[0.822852] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__traits.hpp\n'}
+[0.822931] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__type_support.hpp\n'}
+[0.823058] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__type_support.hpp\n'}
+[0.823137] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__traits.hpp\n'}
+[0.823212] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support.hpp\n'}
+[0.823287] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__struct.hpp\n'}
+[0.823364] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__builder.hpp\n'}
+[0.823437] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__traits.hpp\n'}
+[0.823774] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__builder.hpp\n'}
+[0.823888] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__struct.hpp\n'}
+[0.824078] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__struct.hpp\n'}
+[0.824185] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__builder.hpp\n'}
+[0.824297] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__struct.hpp\n'}
+[0.824387] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/leg_odometry.hpp\n'}
+[0.824460] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/attitude.hpp\n'}
+[0.824537] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.824688] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/sensor_fusion.hpp\n'}
+[0.824768] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs\n'}
+[0.824842] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv\n'}
+[0.824934] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail\n'}
+[0.825057] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825219] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825300] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825413] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/dds_fastrtps\n'}
+[0.825497] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825565] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825628] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825774] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825842] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825914] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.825992] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826057] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826119] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg\n'}
+[0.826180] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail\n'}
+[0.826304] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826389] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826455] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826518] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/dds_fastrtps\n'}
+[0.826580] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826642] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826704] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.826836] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib/libstate_estimator_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.826917] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs\n'}
+[0.826983] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv\n'}
+[0.838902] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail\n'}
+[0.839072] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__rosidl_typesupport_introspection_c.h\n'}
+[0.839172] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__type_support.c\n'}
+[0.839263] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__rosidl_typesupport_introspection_c.h\n'}
+[0.839368] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__type_support.c\n'}
+[0.839451] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__type_support.c\n'}
+[0.839538] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__type_support.c\n'}
+[0.839622] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__type_support.c\n'}
+[0.839704] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__rosidl_typesupport_introspection_c.h\n'}
+[0.839787] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__rosidl_typesupport_introspection_c.h\n'}
+[0.839870] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__type_support.c\n'}
+[0.839941] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__rosidl_typesupport_introspection_c.h\n'}
+[0.840013] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__type_support.c\n'}
+[0.840090] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__rosidl_typesupport_introspection_c.h\n'}
+[0.840182] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__rosidl_typesupport_introspection_c.h\n'}
+[0.840245] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__rosidl_typesupport_introspection_c.h\n'}
+[0.840318] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__type_support.c\n'}
+[0.840401] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__type_support.c\n'}
+[0.840485] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__type_support.c\n'}
+[0.840571] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__type_support.c\n'}
+[0.840659] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__rosidl_typesupport_introspection_c.h\n'}
+[0.840757] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__rosidl_typesupport_introspection_c.h\n'}
+[0.840852] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__rosidl_typesupport_introspection_c.h\n'}
+[0.840942] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg\n'}
+[0.841142] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail\n'}
+[0.841258] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__type_support.c\n'}
+[0.841333] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__rosidl_typesupport_introspection_c.h\n'}
+[0.841405] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__rosidl_typesupport_introspection_c.h\n'}
+[0.841476] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__type_support.c\n'}
+[0.841547] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__rosidl_typesupport_introspection_c.h\n'}
+[0.841626] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__type_support.c\n'}
+[0.841694] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__rosidl_typesupport_introspection_c.h\n'}
+[0.841758] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support.c\n'}
+[0.841829] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__type_support.c\n'}
+[0.841895] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__rosidl_typesupport_introspection_c.h\n'}
+[0.841958] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.842022] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib/libstate_estimator_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.842085] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib/libstate_estimator_msgs__rosidl_typesupport_c.so\n'}
+[0.842167] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs\n'}
+[0.842238] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv\n'}
+[0.842300] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail\n'}
+[0.842364] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__type_support.cpp\n'}
+[0.842427] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.842498] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.842562] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.842625] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__type_support.cpp\n'}
+[0.842699] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__type_support.cpp\n'}
+[0.842790] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__type_support.cpp\n'}
+[0.842864] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/list_all_estimators__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.842936] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/resume_estimator__type_support.cpp\n'}
+[0.843003] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/reset_estimator__type_support.cpp\n'}
+[0.843101] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__type_support.cpp\n'}
+[0.843178] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/pause_estimator__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.843308] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/restart_estimator__type_support.cpp\n'}
+[0.854775] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.854965] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__type_support.cpp\n'}
+[0.855066] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__type_support.cpp\n'}
+[0.855142] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/stop_estimator__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.855211] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/start_estimator__type_support.cpp\n'}
+[0.855277] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_blacklist__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.855345] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_estimator_description__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.855475] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_whitelist__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.855550] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/srv/detail/get_active_estimators__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.855619] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg\n'}
+[0.855692] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail\n'}
+[0.855767] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.855832] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/sensor_fusion__type_support.cpp\n'}
+[0.856004] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.856086] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support.cpp\n'}
+[0.856154] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__type_support.cpp\n'}
+[0.856221] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/contact_detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.856286] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__type_support.cpp\n'}
+[0.856351] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__type_support.cpp\n'}
+[0.856428] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/leg_odometry__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.856544] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/include/state_estimator_msgs/state_estimator_msgs/msg/detail/attitude__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.856617] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib/libstate_estimator_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.856682] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib/libstate_estimator_msgs__rosidl_typesupport_cpp.so\n'}
+[0.856746] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/environment/pythonpath.sh\n'}
+[0.856814] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/environment/pythonpath.dsv\n'}
+[0.856878] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs-0.0.1-py3.10.egg-info\n'}
+[0.856948] (state_estimator_msgs) StdoutLine: {'line': b'-- Installing: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[0.857128] (state_estimator_msgs) StdoutLine: {'line': b'-- Installing: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[0.857211] (state_estimator_msgs) StdoutLine: {'line': b'-- Installing: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[0.857298] (state_estimator_msgs) StdoutLine: {'line': b'-- Installing: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[0.857375] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs\n'}
+[0.857443] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv\n'}
+[0.862837] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_stop_estimator_s.c\n'}
+[0.863002] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_list_all_estimators_s.c\n'}
+[0.863114] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_start_estimator_s.c\n'}
+[0.863210] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_pause_estimator.py\n'}
+[0.863335] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_get_active_estimators.py\n'}
+[0.863433] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_resume_estimator_s.c\n'}
+[0.868543] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_start_estimator.py\n'}
+[0.870825] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_get_blacklist.py\n'}
+[0.871024] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_list_all_estimators.py\n'}
+[0.871108] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_pause_estimator_s.c\n'}
+[0.871184] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_reset_estimator.py\n'}
+[0.871261] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_get_estimator_description.py\n'}
+[0.871329] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_get_estimator_description_s.c\n'}
+[0.871403] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_resume_estimator.py\n'}
+[0.871537] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_get_blacklist_s.c\n'}
+[0.871613] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_restart_estimator_s.c\n'}
+[0.871678] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_get_whitelist_s.c\n'}
+[0.871740] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_get_whitelist.py\n'}
+[0.871808] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_get_active_estimators_s.c\n'}
+[0.871872] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_reset_estimator_s.c\n'}
+[0.871937] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_restart_estimator.py\n'}
+[0.872001] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/__init__.py\n'}
+[0.872063] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv/_stop_estimator.py\n'}
+[0.872128] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.872215] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.872303] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg\n'}
+[0.872375] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_leg_odometry_s.c\n'}
+[0.872494] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_contact_detection_s.c\n'}
+[0.872573] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_attitude_s.c\n'}
+[0.872641] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_sensor_fusion.py\n'}
+[0.872846] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_joint_state_with_acceleration.py\n'}
+[0.872921] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_sensor_fusion_s.c\n'}
+[0.873078] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_contact_detection.py\n'}
+[0.873152] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_attitude.py\n'}
+[0.873220] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_leg_odometry.py\n'}
+[0.873288] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/_joint_state_with_acceleration_s.c\n'}
+[0.873355] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg/__init__.py\n'}
+[0.873423] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.873549] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.873637] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.873707] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/__init__.py\n'}
+[0.873770] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.873861] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/libstate_estimator_msgs__rosidl_generator_py.so\n'}
+[0.910553] (state_estimator_msgs) StdoutLine: {'line': b"Listing '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs'...\n"}
+[0.910918] (state_estimator_msgs) StdoutLine: {'line': b"Listing '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/msg'...\n"}
+[0.911052] (state_estimator_msgs) StdoutLine: {'line': b"Listing '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/srv'...\n"}
+[0.911764] (-) TimerEvent: {}
+[0.932700] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.933240] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.933442] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.933773] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib/libstate_estimator_msgs__rosidl_generator_py.so\n'}
+[0.933902] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/Attitude.idl\n'}
+[0.933976] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/ContactDetection.idl\n'}
+[0.934048] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/LegOdometry.idl\n'}
+[0.934115] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/SensorFusion.idl\n'}
+[0.934184] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/JointStateWithAcceleration.idl\n'}
+[0.934248] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetActiveEstimators.idl\n'}
+[0.934314] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetBlacklist.idl\n'}
+[0.934375] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetEstimatorDescription.idl\n'}
+[0.937732] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetWhitelist.idl\n'}
+[0.938011] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ListAllEstimators.idl\n'}
+[0.938091] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/PauseEstimator.idl\n'}
+[0.938160] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ResetEstimator.idl\n'}
+[0.938251] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/RestartEstimator.idl\n'}
+[0.938315] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ResumeEstimator.idl\n'}
+[0.938378] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/StartEstimator.idl\n'}
+[0.938449] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/StopEstimator.idl\n'}
+[0.938513] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/Attitude.msg\n'}
+[0.938578] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/ContactDetection.msg\n'}
+[0.938643] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/LegOdometry.msg\n'}
+[0.938706] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/SensorFusion.msg\n'}
+[0.938771] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/msg/JointStateWithAcceleration.msg\n'}
+[0.938892] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetActiveEstimators.srv\n'}
+[0.938998] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetActiveEstimators_Request.msg\n'}
+[0.939104] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetActiveEstimators_Response.msg\n'}
+[0.949345] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetBlacklist.srv\n'}
+[0.957370] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetBlacklist_Request.msg\n'}
+[0.957550] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetBlacklist_Response.msg\n'}
+[0.977142] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetEstimatorDescription.srv\n'}
+[0.977368] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetEstimatorDescription_Request.msg\n'}
+[0.977577] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetEstimatorDescription_Response.msg\n'}
+[0.977716] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetWhitelist.srv\n'}
+[0.977870] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetWhitelist_Request.msg\n'}
+[0.977975] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/GetWhitelist_Response.msg\n'}
+[0.978067] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ListAllEstimators.srv\n'}
+[0.979557] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ListAllEstimators_Request.msg\n'}
+[0.979731] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ListAllEstimators_Response.msg\n'}
+[0.979873] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/PauseEstimator.srv\n'}
+[0.980022] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/PauseEstimator_Request.msg\n'}
+[0.980166] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/PauseEstimator_Response.msg\n'}
+[0.980301] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ResetEstimator.srv\n'}
+[0.980448] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ResetEstimator_Request.msg\n'}
+[0.981243] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ResetEstimator_Response.msg\n'}
+[0.981362] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/RestartEstimator.srv\n'}
+[0.981528] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/RestartEstimator_Request.msg\n'}
+[0.981629] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/RestartEstimator_Response.msg\n'}
+[0.981710] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ResumeEstimator.srv\n'}
+[0.981787] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ResumeEstimator_Request.msg\n'}
+[0.981860] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/ResumeEstimator_Response.msg\n'}
+[0.981929] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/StartEstimator.srv\n'}
+[0.982066] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/StartEstimator_Request.msg\n'}
+[0.982153] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/StartEstimator_Response.msg\n'}
+[0.982229] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/StopEstimator.srv\n'}
+[0.982299] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/StopEstimator_Request.msg\n'}
+[0.982364] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/srv/StopEstimator_Response.msg\n'}
+[0.982429] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/ament_index/resource_index/package_run_dependencies/state_estimator_msgs\n'}
+[0.982528] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/ament_index/resource_index/parent_prefix_path/state_estimator_msgs\n'}
+[0.982593] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/environment/ament_prefix_path.sh\n'}
+[0.982674] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/environment/ament_prefix_path.dsv\n'}
+[0.982740] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/environment/path.sh\n'}
+[0.982807] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/environment/path.dsv\n'}
+[0.982871] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/local_setup.bash\n'}
+[0.982934] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/local_setup.sh\n'}
+[0.983020] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/local_setup.zsh\n'}
+[0.983085] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/local_setup.dsv\n'}
+[0.983147] (state_estimator_msgs) StdoutLine: {'line': b'-- Installing: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.dsv\n'}
+[0.983210] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/ament_index/resource_index/packages/state_estimator_msgs\n'}
+[0.983273] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_generator_cExport.cmake\n'}
+[0.983339] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.983403] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.983508] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.983588] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.983659] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.983727] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.983795] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.983888] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.983954] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.984020] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.984083] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.984140] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.984198] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.984259] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.984321] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.984399] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/export_state_estimator_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.984461] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.984527] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.984590] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.984651] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.984735] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.984796] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.984865] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.984930] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgsConfig.cmake\n'}
+[0.990940] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/cmake/state_estimator_msgsConfig-version.cmake\n'}
+[0.991567] (state_estimator_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.xml\n'}
+[0.991745] (state_estimator_msgs) CommandEnded: {'returncode': 0}
+[1.019319] (-) TimerEvent: {}
+[1.086209] (state_estimator_msgs) JobEnded: {'identifier': 'state_estimator_msgs', 'rc': 0}
+[1.087514] (state_estimator) JobStarted: {'identifier': 'state_estimator'}
+[1.111403] (state_estimator) JobProgress: {'identifier': 'state_estimator', 'progress': 'cmake'}
+[1.113370] (state_estimator) JobProgress: {'identifier': 'state_estimator', 'progress': 'build'}
+[1.113885] (state_estimator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator', '--', '-j12', '-l12'], 'cwd': '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', '0fa4e54b97e2'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib:/home/dev_ws/colcon_ws/install/kiss_icp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/muse_ws/muse_ros2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/dev_ws/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs:/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs:/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble')]), 'shell': False}
+[1.120590] (-) TimerEvent: {}
+[1.228397] (-) TimerEvent: {}
+[1.328828] (-) TimerEvent: {}
+[1.429459] (-) TimerEvent: {}
+[1.441886] (state_estimator) StdoutLine: {'line': b'[ 62%] Built target state_estimator_plugins\n'}
+[1.529786] (-) TimerEvent: {}
+[1.569362] (state_estimator) StdoutLine: {'line': b'[100%] Built target state_estimator_node\n'}
+[1.598683] (state_estimator) CommandEnded: {'returncode': 0}
+[1.601472] (state_estimator) JobProgress: {'identifier': 'state_estimator', 'progress': 'install'}
+[1.602554] (state_estimator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator'], 'cwd': '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', '0fa4e54b97e2'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/lib:/home/dev_ws/colcon_ws/install/kiss_icp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/muse_ws/muse_ros2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/dev_ws/colcon_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs:/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/muse_ws/muse_ros2/muse_ws/install/state_estimator_msgs:/home/dev_ws/colcon_ws/install/kiss_icp:/opt/ros/humble')]), 'shell': False}
+[1.619147] (state_estimator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.620148] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/lib/libstate_estimator_plugins.so\n'}
+[1.624150] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/lib/state_estimator/state_estimator_node\n'}
+[1.624767] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/state_estimator_plugins.xml\n'}
+[1.625027] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include\n'}
+[1.625172] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator\n'}
+[1.625272] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Robot.hpp\n'}
+[1.625372] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/plugin_base.hpp\n'}
+[1.625473] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/lib.hpp\n'}
+[1.625570] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Models\n'}
+[1.625701] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Models/attitude_bias_NLO.hpp\n'}
+[1.625831] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Models/attitude_bias_XKF.hpp\n'}
+[1.625938] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Models/sensor_fusion.hpp\n'}
+[1.626036] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers\n'}
+[1.626141] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers/NLO.hpp\n'}
+[1.626241] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers/Observer.hpp\n'}
+[1.626337] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers/XKF.hpp\n'}
+[1.626433] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers/EKF.hpp\n'}
+[1.626524] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/plugin.hpp\n'}
+[1.626659] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Services.hpp\n'}
+[1.626763] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/state_estimator_node.hpp\n'}
+[1.626864] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Estimator.hpp\n'}
+[1.626963] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/EigenExtra.hpp\n'}
+[1.627060] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch\n'}
+[1.627158] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/pluginlist.yaml\n'}
+[1.627246] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/state_estimator.launch\n'}
+[1.627334] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/state_estimator_ros2.launch\n'}
+[1.627438] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/state_estimator_simple.launch\n'}
+[1.627531] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/timeout.yaml\n'}
+[1.627654] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/state_estimator_xml.launch.py\n'}
+[1.627841] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/state_estimator.launch.py\n'}
+[1.627934] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config\n'}
+[1.628030] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config/sensor_fusion.yaml\n'}
+[1.628128] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config/attitude_plugin.yaml\n'}
+[1.628226] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config/leg_odometry.yaml\n'}
+[1.628371] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config/contact_plugin.yaml\n'}
+[1.628469] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/urdfs\n'}
+[1.628608] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/urdfs/anymal.urdf\n'}
+[1.628708] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/urdfs/aliengo.urdf\n'}
+[1.628805] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/state_estimator_plugins.xml\n'}
+[1.629028] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/library_path.sh\n'}
+[1.629238] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/library_path.dsv\n'}
+[1.629343] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/ament_index/resource_index/package_run_dependencies/state_estimator\n'}
+[1.629442] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/ament_index/resource_index/parent_prefix_path/state_estimator\n'}
+[1.629518] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/ament_prefix_path.sh\n'}
+[1.629655] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/ament_prefix_path.dsv\n'}
+[1.629822] (-) TimerEvent: {}
+[1.630069] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/path.sh\n'}
+[1.630892] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/path.dsv\n'}
+[1.631669] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/local_setup.bash\n'}
+[1.631855] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/local_setup.sh\n'}
+[1.632902] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/local_setup.zsh\n'}
+[1.633875] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/local_setup.dsv\n'}
+[1.634075] (state_estimator) StdoutLine: {'line': b'-- Installing: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.dsv\n'}
+[1.634230] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/ament_index/resource_index/packages/state_estimator\n'}
+[1.634408] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/ament_index/resource_index/state_estimator__pluginlib__plugin/state_estimator\n'}
+[1.634710] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.634796] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.634888] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.635436] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/state_estimatorConfig.cmake\n'}
+[1.635664] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/state_estimatorConfig-version.cmake\n'}
+[1.635814] (state_estimator) StdoutLine: {'line': b'-- Up-to-date: /root/muse_ws/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.xml\n'}
+[1.635986] (state_estimator) CommandEnded: {'returncode': 0}
+[1.658859] (state_estimator) JobEnded: {'identifier': 'state_estimator', 'rc': 0}
+[1.730038] (-) TimerEvent: {}
+[1.831446] (-) TimerEvent: {}
+[1.932020] (-) TimerEvent: {}
+[2.032553] (-) TimerEvent: {}
+[2.133366] (-) TimerEvent: {}
+[2.237257] (-) TimerEvent: {}
+[2.341121] (-) TimerEvent: {}
+[2.441570] (-) TimerEvent: {}
+[2.542671] (-) TimerEvent: {}
+[2.569446] (iit_commons) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:5\x1b[m\x1b[K,\n'}
+[2.569783] (iit_commons) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/rotation_test.cpp:1\x1b[m\x1b[K:\n'}
+[2.569869] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid iit::commons::computeQR(const MatrixXR&, MatrixXR&, MatrixXR&, const double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.569946] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:271:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktolerance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.570018] (iit_commons) StderrLine: {'line': b'  271 |                       \x1b[01;35m\x1b[Kconst double& tolerance\x1b[m\x1b[K)\n'}
+[2.570085] (iit_commons) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.605063] (iit_commons) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/rotation_test.cpp:1\x1b[m\x1b[K:\n'}
+[2.605891] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix3d iit::commons::rpyToEar(const Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.606004] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:143:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kyaw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.606110] (iit_commons) StderrLine: {'line': b'  143 |     double \x1b[01;35m\x1b[Kyaw\x1b[m\x1b[K = rpy(2);\n'}
+[2.606180] (iit_commons) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.606250] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix3d iit::commons::rpyToEarInv_dot(const Vector3d&, const Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.606320] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:163:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kroll\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.606386] (iit_commons) StderrLine: {'line': b'  163 |     double \x1b[01;35m\x1b[Kroll\x1b[m\x1b[K = rpy(0);\n'}
+[2.606449] (iit_commons) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.606512] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:166:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Krolld\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.606576] (iit_commons) StderrLine: {'line': b'  166 |     double \x1b[01;35m\x1b[Krolld\x1b[m\x1b[K = rpyd(0);\n'}
+[2.606640] (iit_commons) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.644557] (-) TimerEvent: {}
+[2.749233] (-) TimerEvent: {}
+[2.752545] (iit_commons) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:10\x1b[m\x1b[K:\n'}
+[2.752917] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/dog/jsim.h:26:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KJointState\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kiit::dog\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.753028] (iit_commons) StderrLine: {'line': b'   26 |     virtual const JSIMBase& update(const iit::dog::\x1b[01;31m\x1b[KJointState\x1b[m\x1b[K&) = 0;\n'}
+[2.753120] (iit_commons) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.849391] (-) TimerEvent: {}
+[2.954286] (-) TimerEvent: {}
+[3.055050] (-) TimerEvent: {}
+[3.155514] (-) TimerEvent: {}
+[3.158347] (iit_commons) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:5\x1b[m\x1b[K,\n'}
+[3.158583] (iit_commons) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:6\x1b[m\x1b[K,\n'}
+[3.158678] (iit_commons) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7\x1b[m\x1b[K,\n'}
+[3.158809] (iit_commons) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14\x1b[m\x1b[K:\n'}
+[3.158907] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid iit::commons::computeQR(const MatrixXR&, MatrixXR&, MatrixXR&, const double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.159011] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:271:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktolerance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.159101] (iit_commons) StderrLine: {'line': b'  271 |                       \x1b[01;35m\x1b[Kconst double& tolerance\x1b[m\x1b[K)\n'}
+[3.159155] (iit_commons) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.203481] (iit_commons) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:6\x1b[m\x1b[K,\n'}
+[3.203920] (iit_commons) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7\x1b[m\x1b[K,\n'}
+[3.204006] (iit_commons) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14\x1b[m\x1b[K:\n'}
+[3.204065] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix3d iit::commons::rpyToEar(const Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.204118] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:143:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kyaw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[3.204171] (iit_commons) StderrLine: {'line': b'  143 |     double \x1b[01;35m\x1b[Kyaw\x1b[m\x1b[K = rpy(2);\n'}
+[3.204218] (iit_commons) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.204525] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix3d iit::commons::rpyToEarInv_dot(const Vector3d&, const Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.204663] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:163:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kroll\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[3.204798] (iit_commons) StderrLine: {'line': b'  163 |     double \x1b[01;35m\x1b[Kroll\x1b[m\x1b[K = rpy(0);\n'}
+[3.204894] (iit_commons) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.204972] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:166:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Krolld\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[3.205208] (iit_commons) StderrLine: {'line': b'  166 |     double \x1b[01;35m\x1b[Krolld\x1b[m\x1b[K = rpyd(0);\n'}
+[3.205314] (iit_commons) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.255704] (-) TimerEvent: {}
+[3.356232] (-) TimerEvent: {}
+[3.456914] (-) TimerEvent: {}
+[3.557511] (-) TimerEvent: {}
+[3.658084] (-) TimerEvent: {}
+[3.759049] (-) TimerEvent: {}
+[3.865659] (-) TimerEvent: {}
+[3.966280] (-) TimerEvent: {}
+[4.066863] (-) TimerEvent: {}
+[4.167317] (-) TimerEvent: {}
+[4.267810] (-) TimerEvent: {}
+[4.334322] (iit_commons) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7\x1b[m\x1b[K,\n'}
+[4.334598] (iit_commons) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14\x1b[m\x1b[K:\n'}
+[4.334678] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid iit::planning::ClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.334896] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:162:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.334972] (iit_commons) StderrLine: {'line': b'  162 |     for (int i = 1; \x1b[01;35m\x1b[Ki < p.size() - 1\x1b[m\x1b[K; i++) {\n'}
+[4.335035] (iit_commons) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.335210] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:163:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.335309] (iit_commons) StderrLine: {'line': b'  163 |         for (int j = i + 1; \x1b[01;35m\x1b[Kj < p.size()\x1b[m\x1b[K; j++) {\n'}
+[4.335391] (iit_commons) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.335491] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.335581] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:186:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.335647] (iit_commons) StderrLine: {'line': b'  186 |     for (int i = 1; \x1b[01;35m\x1b[Ki < p.size() - 1\x1b[m\x1b[K; i++) {\n'}
+[4.335732] (iit_commons) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.335793] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:187:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.335901] (iit_commons) StderrLine: {'line': b'  187 |         for (int j = i + 1; \x1b[01;35m\x1b[Kj < p.size()\x1b[m\x1b[K; j++) {\n'}
+[4.335996] (iit_commons) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.336084] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.336199] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:211:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.336291] (iit_commons) StderrLine: {'line': b'  211 |     for (int i = 0; \x1b[01;35m\x1b[Ki < p.size()\x1b[m\x1b[K; i++)\n'}
+[4.336350] (iit_commons) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.338549] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:213:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.338780] (iit_commons) StderrLine: {'line': b'  213 |     for (int i = 1; \x1b[01;35m\x1b[Ki < p.size() - 1\x1b[m\x1b[K; i++) {\n'}
+[4.338858] (iit_commons) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.341249] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:214:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[4.341510] (iit_commons) StderrLine: {'line': b'  214 |         for (int j = i + 1; \x1b[01;35m\x1b[Kj < p.size()\x1b[m\x1b[K; j++) {\n'}
+[4.341625] (iit_commons) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.370971] (-) TimerEvent: {}
+[4.471525] (-) TimerEvent: {}
+[4.572015] (-) TimerEvent: {}
+[4.672498] (-) TimerEvent: {}
+[4.773151] (-) TimerEvent: {}
+[4.877128] (-) TimerEvent: {}
+[4.977584] (-) TimerEvent: {}
+[5.078366] (-) TimerEvent: {}
+[5.178803] (-) TimerEvent: {}
+[5.279366] (-) TimerEvent: {}
+[5.379940] (-) TimerEvent: {}
+[5.480480] (-) TimerEvent: {}
+[5.581296] (-) TimerEvent: {}
+[5.681775] (-) TimerEvent: {}
+[5.785805] (-) TimerEvent: {}
+[5.886366] (-) TimerEvent: {}
+[5.988930] (-) TimerEvent: {}
+[6.089517] (-) TimerEvent: {}
+[6.190657] (-) TimerEvent: {}
+[6.291190] (-) TimerEvent: {}
+[6.391717] (-) TimerEvent: {}
+[6.492221] (-) TimerEvent: {}
+[6.592771] (-) TimerEvent: {}
+[6.693343] (-) TimerEvent: {}
+[6.793835] (-) TimerEvent: {}
+[6.894345] (-) TimerEvent: {}
+[6.994886] (-) TimerEvent: {}
+[7.095387] (-) TimerEvent: {}
+[7.195833] (-) TimerEvent: {}
+[7.296382] (-) TimerEvent: {}
+[7.396894] (-) TimerEvent: {}
+[7.497516] (-) TimerEvent: {}
+[7.598535] (-) TimerEvent: {}
+[7.700866] (-) TimerEvent: {}
+[7.801541] (-) TimerEvent: {}
+[7.902118] (-) TimerEvent: {}
+[8.002648] (-) TimerEvent: {}
+[8.103179] (-) TimerEvent: {}
+[8.203687] (-) TimerEvent: {}
+[8.304244] (-) TimerEvent: {}
+[8.411027] (-) TimerEvent: {}
+[8.511547] (-) TimerEvent: {}
+[8.612097] (-) TimerEvent: {}
+[8.712653] (-) TimerEvent: {}
+[8.813218] (-) TimerEvent: {}
+[8.917175] (-) TimerEvent: {}
+[9.017710] (-) TimerEvent: {}
+[9.119625] (-) TimerEvent: {}
+[9.220228] (-) TimerEvent: {}
+[9.320739] (-) TimerEvent: {}
+[9.422314] (-) TimerEvent: {}
+[9.522835] (-) TimerEvent: {}
+[9.626671] (-) TimerEvent: {}
+[9.727238] (-) TimerEvent: {}
+[9.827721] (-) TimerEvent: {}
+[9.928257] (-) TimerEvent: {}
+[10.028797] (-) TimerEvent: {}
+[10.131121] (-) TimerEvent: {}
+[10.231786] (-) TimerEvent: {}
+[10.332308] (-) TimerEvent: {}
+[10.433245] (-) TimerEvent: {}
+[10.537165] (-) TimerEvent: {}
+[10.641172] (-) TimerEvent: {}
+[10.741688] (-) TimerEvent: {}
+[10.842131] (-) TimerEvent: {}
+[10.942838] (-) TimerEvent: {}
+[11.043588] (-) TimerEvent: {}
+[11.145995] (-) TimerEvent: {}
+[11.247369] (-) TimerEvent: {}
+[11.348022] (-) TimerEvent: {}
+[11.453412] (-) TimerEvent: {}
+[11.558198] (-) TimerEvent: {}
+[11.661697] (-) TimerEvent: {}
+[11.763809] (-) TimerEvent: {}
+[11.864755] (-) TimerEvent: {}
+[11.970504] (-) TimerEvent: {}
+[12.071035] (-) TimerEvent: {}
+[12.173453] (-) TimerEvent: {}
+[12.277239] (-) TimerEvent: {}
+[12.377943] (-) TimerEvent: {}
+[12.478614] (-) TimerEvent: {}
+[12.579642] (-) TimerEvent: {}
+[12.680183] (-) TimerEvent: {}
+[12.783429] (-) TimerEvent: {}
+[12.884814] (-) TimerEvent: {}
+[12.988173] (-) TimerEvent: {}
+[13.088757] (-) TimerEvent: {}
+[13.191646] (-) TimerEvent: {}
+[13.293205] (-) TimerEvent: {}
+[13.393767] (-) TimerEvent: {}
+[13.497772] (-) TimerEvent: {}
+[13.598518] (-) TimerEvent: {}
+[13.700492] (-) TimerEvent: {}
+[13.803066] (-) TimerEvent: {}
+[13.903930] (-) TimerEvent: {}
+[14.004445] (-) TimerEvent: {}
+[14.105064] (-) TimerEvent: {}
+[14.210312] (-) TimerEvent: {}
+[14.318825] (-) TimerEvent: {}
+[14.419380] (-) TimerEvent: {}
+[14.520126] (-) TimerEvent: {}
+[14.621111] (-) TimerEvent: {}
+[14.721895] (-) TimerEvent: {}
+[14.825247] (-) TimerEvent: {}
+[14.925795] (-) TimerEvent: {}
+[15.026339] (-) TimerEvent: {}
+[15.129144] (-) TimerEvent: {}
+[15.229922] (-) TimerEvent: {}
+[15.330453] (-) TimerEvent: {}
+[15.430910] (-) TimerEvent: {}
+[15.531371] (-) TimerEvent: {}
+[15.632422] (-) TimerEvent: {}
+[15.739036] (-) TimerEvent: {}
+[15.839526] (-) TimerEvent: {}
+[15.940029] (-) TimerEvent: {}
+[16.040538] (-) TimerEvent: {}
+[16.141177] (-) TimerEvent: {}
+[16.241698] (-) TimerEvent: {}
+[16.342680] (-) TimerEvent: {}
+[16.443468] (-) TimerEvent: {}
+[16.553271] (-) TimerEvent: {}
+[16.654504] (-) TimerEvent: {}
+[16.755159] (-) TimerEvent: {}
+[16.855592] (-) TimerEvent: {}
+[16.956035] (-) TimerEvent: {}
+[17.063470] (-) TimerEvent: {}
+[17.164087] (-) TimerEvent: {}
+[17.265767] (-) TimerEvent: {}
+[17.369667] (-) TimerEvent: {}
+[17.470172] (-) TimerEvent: {}
+[17.571117] (-) TimerEvent: {}
+[17.671723] (-) TimerEvent: {}
+[17.772279] (-) TimerEvent: {}
+[17.872835] (-) TimerEvent: {}
+[17.973408] (-) TimerEvent: {}
+[18.076600] (-) TimerEvent: {}
+[18.177339] (-) TimerEvent: {}
+[18.277846] (-) TimerEvent: {}
+[18.378310] (-) TimerEvent: {}
+[18.478884] (-) TimerEvent: {}
+[18.579443] (-) TimerEvent: {}
+[18.685171] (-) TimerEvent: {}
+[18.785708] (-) TimerEvent: {}
+[18.886395] (-) TimerEvent: {}
+[18.990659] (-) TimerEvent: {}
+[19.092896] (-) TimerEvent: {}
+[19.193567] (-) TimerEvent: {}
+[19.294112] (-) TimerEvent: {}
+[19.394715] (-) TimerEvent: {}
+[19.495419] (-) TimerEvent: {}
+[19.596014] (-) TimerEvent: {}
+[19.696596] (-) TimerEvent: {}
+[19.797619] (-) TimerEvent: {}
+[19.898297] (-) TimerEvent: {}
+[19.998886] (-) TimerEvent: {}
+[20.099458] (-) TimerEvent: {}
+[20.199897] (-) TimerEvent: {}
+[20.300657] (-) TimerEvent: {}
+[20.401275] (-) TimerEvent: {}
+[20.501719] (-) TimerEvent: {}
+[20.602187] (-) TimerEvent: {}
+[20.702786] (-) TimerEvent: {}
+[20.803310] (-) TimerEvent: {}
+[20.904150] (-) TimerEvent: {}
+[21.005565] (-) TimerEvent: {}
+[21.106246] (-) TimerEvent: {}
+[21.217237] (-) TimerEvent: {}
+[21.320395] (-) TimerEvent: {}
+[21.420949] (-) TimerEvent: {}
+[21.521821] (-) TimerEvent: {}
+[21.622533] (-) TimerEvent: {}
+[21.724211] (-) TimerEvent: {}
+[21.825366] (-) TimerEvent: {}
+[21.933166] (-) TimerEvent: {}
+[22.033657] (-) TimerEvent: {}
+[22.134188] (-) TimerEvent: {}
+[22.234806] (-) TimerEvent: {}
+[22.335427] (-) TimerEvent: {}
+[22.437112] (-) TimerEvent: {}
+[22.537649] (-) TimerEvent: {}
+[22.638257] (-) TimerEvent: {}
+[22.738833] (-) TimerEvent: {}
+[22.839493] (-) TimerEvent: {}
+[22.945214] (-) TimerEvent: {}
+[23.045767] (-) TimerEvent: {}
+[23.146313] (-) TimerEvent: {}
+[23.246856] (-) TimerEvent: {}
+[23.347850] (-) TimerEvent: {}
+[23.448318] (-) TimerEvent: {}
+[23.548861] (-) TimerEvent: {}
+[23.649424] (-) TimerEvent: {}
+[23.750091] (-) TimerEvent: {}
+[23.850842] (-) TimerEvent: {}
+[23.951326] (-) TimerEvent: {}
+[24.053614] (-) TimerEvent: {}
+[24.155777] (-) TimerEvent: {}
+[24.264103] (-) TimerEvent: {}
+[24.364635] (-) TimerEvent: {}
+[24.466907] (-) TimerEvent: {}
+[24.569819] (-) TimerEvent: {}
+[24.670471] (-) TimerEvent: {}
+[24.779286] (-) TimerEvent: {}
+[24.879872] (-) TimerEvent: {}
+[24.980334] (-) TimerEvent: {}
+[25.082502] (-) TimerEvent: {}
+[25.191233] (-) TimerEvent: {}
+[25.291899] (-) TimerEvent: {}
+[25.393052] (-) TimerEvent: {}
+[25.493470] (-) TimerEvent: {}
+[25.593997] (-) TimerEvent: {}
+[25.694576] (-) TimerEvent: {}
+[25.797156] (-) TimerEvent: {}
+[25.903163] (-) TimerEvent: {}
+[26.004077] (-) TimerEvent: {}
+[26.105700] (-) TimerEvent: {}
+[26.206978] (-) TimerEvent: {}
+[26.307590] (-) TimerEvent: {}
+[26.408201] (-) TimerEvent: {}
+[26.508737] (-) TimerEvent: {}
+[26.610199] (-) TimerEvent: {}
+[26.710603] (-) TimerEvent: {}
+[26.811051] (-) TimerEvent: {}
+[26.911557] (-) TimerEvent: {}
+[27.012157] (-) TimerEvent: {}
+[27.058109] (iit_commons) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable rotation-test\x1b[0m\n'}
+[27.112306] (-) TimerEvent: {}
+[27.212849] (-) TimerEvent: {}
+[27.313399] (-) TimerEvent: {}
+[27.408592] (iit_commons) StdoutLine: {'line': b'[ 66%] Built target rotation-test\n'}
+[27.413540] (-) TimerEvent: {}
+[27.517132] (-) TimerEvent: {}
+[27.617654] (-) TimerEvent: {}
+[27.718205] (-) TimerEvent: {}
+[27.819078] (-) TimerEvent: {}
+[27.919492] (-) TimerEvent: {}
+[28.020683] (-) TimerEvent: {}
+[28.123129] (-) TimerEvent: {}
+[28.223677] (-) TimerEvent: {}
+[28.324269] (-) TimerEvent: {}
+[28.425366] (-) TimerEvent: {}
+[28.532333] (-) TimerEvent: {}
+[28.632698] (-) TimerEvent: {}
+[28.733230] (-) TimerEvent: {}
+[28.833751] (-) TimerEvent: {}
+[28.934339] (-) TimerEvent: {}
+[29.035405] (-) TimerEvent: {}
+[29.135885] (-) TimerEvent: {}
+[29.236379] (-) TimerEvent: {}
+[29.338210] (-) TimerEvent: {}
+[29.438881] (-) TimerEvent: {}
+[29.539383] (-) TimerEvent: {}
+[29.639833] (-) TimerEvent: {}
+[29.740326] (-) TimerEvent: {}
+[29.840899] (-) TimerEvent: {}
+[29.941682] (-) TimerEvent: {}
+[30.042062] (-) TimerEvent: {}
+[30.145615] (-) TimerEvent: {}
+[30.246436] (-) TimerEvent: {}
+[30.347014] (-) TimerEvent: {}
+[30.447507] (-) TimerEvent: {}
+[30.547927] (-) TimerEvent: {}
+[30.648934] (-) TimerEvent: {}
+[30.756055] (-) TimerEvent: {}
+[30.857251] (-) TimerEvent: {}
+[30.961229] (-) TimerEvent: {}
+[31.064376] (-) TimerEvent: {}
+[31.164887] (-) TimerEvent: {}
+[31.270887] (-) TimerEvent: {}
+[31.372272] (-) TimerEvent: {}
+[31.472786] (-) TimerEvent: {}
+[31.573340] (-) TimerEvent: {}
+[31.679585] (-) TimerEvent: {}
+[31.780186] (-) TimerEvent: {}
+[31.821700] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:\x1b[m\x1b[K At global scope:\n'}
+[31.822091] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:207:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[31.822226] (iit_commons) StderrLine: {'line': b'  207 | static void \x1b[01;35m\x1b[KCounterClockwiseSort\x1b[m\x1b[K(std::vector<Eigen::Vector3d>& p, std::vector<int> & index_map)\n'}
+[31.822422] (iit_commons) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.822601] (iit_commons) StderrLine: {'line': b'\x1b[01m\x1b[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:158:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid iit::planning::ClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[31.822753] (iit_commons) StderrLine: {'line': b'  158 | static void \x1b[01;35m\x1b[KClockwiseSort\x1b[m\x1b[K(std::vector<Eigen::Vector3d>& p)\n'}
+[31.822857] (iit_commons) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.880392] (-) TimerEvent: {}
+[31.980965] (-) TimerEvent: {}
+[32.036708] (iit_commons) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/vm-test.dir/build.make:76: CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o] Error 1\n'}
+[32.037506] (iit_commons) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/vm-test.dir/all] Error 2\n'}
+[32.037977] (iit_commons) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[32.045846] (iit_commons) CommandEnded: {'returncode': 2}
+[32.052843] (iit_commons) JobEnded: {'identifier': 'iit_commons', 'rc': 2}
+[32.063989] (-) EventReactorShutdown: {}

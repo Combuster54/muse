@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target iitcommons[0m
+[  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/planning.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/control/VirtualModel.cpp.o[0m
+[ 19%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 19%] Built target gtest

@@ -1,0 +1,136 @@
+[0.033s] Invoking command in '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12
+[0.153s] [  9%] Built target gtest_main
+[0.155s] [ 19%] Built target gtest
+[0.156s] [ 42%] Built target iitcommons
+[0.187s] [35m[1mConsolidate compiler generated dependencies of target algebra-test[0m
+[0.188s] [35m[1mConsolidate compiler generated dependencies of target vm-test[0m
+[0.188s] [35m[1mConsolidate compiler generated dependencies of target filt-test[0m
+[0.221s] [ 52%] Built target filt-test
+[0.239s] [ 61%] Built target algebra-test
+[0.242s] [ 66%] [32mBuilding CXX object CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o[0m
+[0.305s] [ 71%] [32mBuilding CXX object CMakeFiles/planning-test.dir/src/planning_test.cpp.o[0m
+[0.314s] [ 76%] [32mBuilding CXX object CMakeFiles/rotation-test.dir/src/rotation_test.cpp.o[0m
+[0.350s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/rotation_test.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kiit/commons/geometry/rotations.h: No such file or directory
+[0.350s]     1 | #include [01;31m[K"iit/commons/geometry/rotations.h"[m[K
+[0.351s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.351s] compilation terminated.
+[0.352s] gmake[2]: *** [CMakeFiles/rotation-test.dir/build.make:76: CMakeFiles/rotation-test.dir/src/rotation_test.cpp.o] Error 1
+[0.352s] gmake[1]: *** [CMakeFiles/Makefile2:334: CMakeFiles/rotation-test.dir/all] Error 2
+[0.353s] gmake[1]: *** Waiting for unfinished jobs....
+[2.765s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:10[m[K:
+[2.765s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/dog/jsim.h:26:52:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState[m[K’ in namespace ‘[01m[Kiit::dog[m[K’ does not name a type
+[2.765s]    26 |     virtual const JSIMBase& update(const iit::dog::[01;31m[KJointState[m[K&) = 0;
+[2.765s]       |                                                    [01;31m[K^~~~~~~~~~[m[K
+[2.860s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:5[m[K,
+[2.860s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:6[m[K,
+[2.860s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/planning_test.cpp:1[m[K:
+[2.860s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:[m[K In function ‘[01m[Kvoid iit::commons::computeQR(const MatrixXR&, MatrixXR&, MatrixXR&, const double&)[m[K’:
+[2.860s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:271:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktolerance[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.860s]   271 |                       [01;35m[Kconst double& tolerance[m[K)
+[2.860s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[2.911s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:6[m[K,
+[2.911s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/planning_test.cpp:1[m[K:
+[2.911s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:[m[K In function ‘[01m[KEigen::Matrix3d iit::commons::rpyToEar(const Vector3d&)[m[K’:
+[2.912s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:143:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.912s]   143 |     double [01;35m[Kyaw[m[K = rpy(2);
+[2.912s]       |            [01;35m[K^~~[m[K
+[2.912s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:[m[K In function ‘[01m[KEigen::Matrix3d iit::commons::rpyToEarInv_dot(const Vector3d&, const Vector3d&)[m[K’:
+[2.912s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:163:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kroll[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.912s]   163 |     double [01;35m[Kroll[m[K = rpy(0);
+[2.912s]       |            [01;35m[K^~~~[m[K
+[2.912s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:166:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krolld[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.912s]   166 |     double [01;35m[Krolld[m[K = rpyd(0);
+[2.912s]       |            [01;35m[K^~~~~[m[K
+[3.290s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:5[m[K,
+[3.290s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:6[m[K,
+[3.291s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7[m[K,
+[3.291s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14[m[K:
+[3.291s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:[m[K In function ‘[01m[Kvoid iit::commons::computeQR(const MatrixXR&, MatrixXR&, MatrixXR&, const double&)[m[K’:
+[3.291s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/algebra.h:271:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktolerance[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.291s]   271 |                       [01;35m[Kconst double& tolerance[m[K)
+[3.291s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[3.338s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:6[m[K,
+[3.338s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7[m[K,
+[3.338s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14[m[K:
+[3.338s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:[m[K In function ‘[01m[KEigen::Matrix3d iit::commons::rpyToEar(const Vector3d&)[m[K’:
+[3.338s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:143:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.338s]   143 |     double [01;35m[Kyaw[m[K = rpy(2);
+[3.338s]       |            [01;35m[K^~~[m[K
+[3.338s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:[m[K In function ‘[01m[KEigen::Matrix3d iit::commons::rpyToEarInv_dot(const Vector3d&, const Vector3d&)[m[K’:
+[3.338s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:163:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kroll[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.338s]   163 |     double [01;35m[Kroll[m[K = rpy(0);
+[3.338s]       |            [01;35m[K^~~~[m[K
+[3.338s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/geometry/rotations.h:166:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krolld[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.339s]   166 |     double [01;35m[Krolld[m[K = rpyd(0);
+[3.339s]       |            [01;35m[K^~~~~[m[K
+[4.150s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/planning_test.cpp:1[m[K:
+[4.150s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::ClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[4.150s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:162:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.150s]   162 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.150s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.150s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:163:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.150s]   163 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.150s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[4.151s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[4.152s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:186:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.152s]   186 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.152s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.152s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:187:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.153s]   187 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.153s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[4.153s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<int>&)[m[K’:
+[4.153s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:211:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.153s]   211 |     for (int i = 0; [01;35m[Ki < p.size()[m[K; i++)
+[4.153s]       |                     [01;35m[K~~^~~~~~~~~~[m[K
+[4.155s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:213:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.155s]   213 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.156s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.156s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:214:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.156s]   214 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.156s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[4.489s] In file included from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/control/VirtualModel.hpp:7[m[K,
+[4.489s]                  from [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/src/control/testVirtualModel.cpp:14[m[K:
+[4.490s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::ClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[4.490s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:162:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.490s]   162 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.490s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.490s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:163:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.490s]   163 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.490s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[4.490s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[4.491s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:186:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.491s]   186 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.491s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.491s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:187:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.491s]   187 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.491s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[4.492s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K In function ‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<int>&)[m[K’:
+[4.492s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:211:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.492s]   211 |     for (int i = 0; [01;35m[Ki < p.size()[m[K; i++)
+[4.492s]       |                     [01;35m[K~~^~~~~~~~~~[m[K
+[4.493s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:213:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.493s]   213 |     for (int i = 1; [01;35m[Ki < p.size() - 1[m[K; i++) {
+[4.493s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.493s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:214:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[4.493s]   214 |         for (int j = i + 1; [01;35m[Kj < p.size()[m[K; j++) {
+[4.493s]       |                             [01;35m[K~~^~~~~~~~~~[m[K
+[27.837s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K At global scope:
+[27.837s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:207:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<int>&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[27.837s]   207 | static void [01;35m[KCounterClockwiseSort[m[K(std::vector<Eigen::Vector3d>& p, std::vector<int> & index_map)
+[27.837s]       |             [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[27.837s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:158:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid iit::planning::ClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[27.837s]   158 | static void [01;35m[KClockwiseSort[m[K(std::vector<Eigen::Vector3d>& p)
+[27.837s]       |             [01;35m[K^~~~~~~~~~~~~[m[K
+[29.141s] [ 80%] [32m[1mLinking CXX executable planning-test[0m
+[29.520s] [ 80%] Built target planning-test
+[30.560s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:[m[K At global scope:
+[30.560s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:207:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid iit::planning::CounterClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<int>&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[30.560s]   207 | static void [01;35m[KCounterClockwiseSort[m[K(std::vector<Eigen::Vector3d>& p, std::vector<int> & index_map)
+[30.560s]       |             [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[30.560s] [01m[K/root/muse_ws/muse_ros2/muse_ws/src/iit_commons/include/iit_commons/commons/planning/planning.h:158:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid iit::planning::ClockwiseSort(std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[30.560s]   158 | static void [01;35m[KClockwiseSort[m[K(std::vector<Eigen::Vector3d>& p)
+[30.560s]       |             [01;35m[K^~~~~~~~~~~~~[m[K
+[30.740s] gmake[2]: *** [CMakeFiles/vm-test.dir/build.make:76: CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o] Error 1
+[30.741s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/vm-test.dir/all] Error 2
+[30.741s] gmake: *** [Makefile:146: all] Error 2
+[30.747s] Invoked command in '/root/muse_ws/muse_ros2/muse_ws/build/iit_commons' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12

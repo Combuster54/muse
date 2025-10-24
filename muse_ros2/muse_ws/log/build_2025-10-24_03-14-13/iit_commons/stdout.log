@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target iitcommons[0m
+[  4%] [32mBuilding CXX object CMakeFiles/iitcommons.dir/src/control/VirtualModel.cpp.o[0m
+[  9%] [32m[1mLinking CXX shared library libiitcommons.so[0m
+[ 23%] Built target iitcommons
+[ 28%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 33%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 33%] Built target gtest_main
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[ 42%] Built target gtest
+[ 47%] [32mBuilding CXX object CMakeFiles/vm-test.dir/src/control/testVirtualModel.cpp.o[0m

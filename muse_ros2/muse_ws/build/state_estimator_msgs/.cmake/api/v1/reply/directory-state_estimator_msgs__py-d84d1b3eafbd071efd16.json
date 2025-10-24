@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "state_estimator_msgs__py",
+		"source" : "/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs/state_estimator_msgs__py"
+	}
+}

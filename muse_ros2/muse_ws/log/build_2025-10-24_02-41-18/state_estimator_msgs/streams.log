@@ -1,0 +1,176 @@
+[0.024s] Invoking command in '/root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/muse_ws/muse_ros2/muse_ws/build/state_estimator_msgs -- -j12 -l12
+[0.145s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.086s] [  0%] Built target state_estimator_msgs__cpp
+[3.142s] [  0%] Built target ament_cmake_python_copy_state_estimator_msgs
+[3.174s] [  0%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.775s] [  1%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/attitude__type_support.cpp.o[0m
+[5.583s] [  2%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/get_estimator_description__type_support.cpp.o[0m
+[6.560s] [  2%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/get_whitelist__type_support.cpp.o[0m
+[7.342s] [  3%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/list_all_estimators__type_support.cpp.o[0m
+[7.975s] [  4%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/pause_estimator__type_support.cpp.o[0m
+[8.584s] [  4%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/reset_estimator__type_support.cpp.o[0m
+[9.192s] [  5%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/restart_estimator__type_support.cpp.o[0m
+[9.827s] [  6%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/resume_estimator__type_support.cpp.o[0m
+[10.431s] [  6%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/start_estimator__type_support.cpp.o[0m
+[11.063s] [  7%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/stop_estimator__type_support.cpp.o[0m
+[11.667s] [  8%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/get_blacklist__type_support.cpp.o[0m
+[12.317s] [  8%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/srv/detail/get_active_estimators__type_support.cpp.o[0m
+[12.997s] [  9%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support.cpp.o[0m
+[13.713s] [ 10%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/sensor_fusion__type_support.cpp.o[0m
+[14.306s] [ 10%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/leg_odometry__type_support.cpp.o[0m
+[14.921s] [ 11%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/state_estimator_msgs/msg/detail/contact_detection__type_support.cpp.o[0m
+[15.533s] [ 12%] [32m[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[15.768s] [ 12%] Built target state_estimator_msgs__rosidl_typesupport_introspection_cpp
+[16.253s] running egg_info
+[16.254s] creating state_estimator_msgs.egg-info
+[16.258s] writing state_estimator_msgs.egg-info/PKG-INFO
+[16.267s] writing dependency_links to state_estimator_msgs.egg-info/dependency_links.txt
+[16.267s] writing top-level names to state_estimator_msgs.egg-info/top_level.txt
+[16.268s] writing manifest file 'state_estimator_msgs.egg-info/SOURCES.txt'
+[16.272s] reading manifest file 'state_estimator_msgs.egg-info/SOURCES.txt'
+[16.273s] writing manifest file 'state_estimator_msgs.egg-info/SOURCES.txt'
+[16.438s] [ 12%] Built target ament_cmake_python_build_state_estimator_msgs_egg
+[16.481s] [ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[18.606s] [ 14%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/attitude__type_support.cpp.o[0m
+[19.495s] [ 15%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/list_all_estimators__type_support.cpp.o[0m
+[20.346s] [ 15%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/pause_estimator__type_support.cpp.o[0m
+[20.954s] [ 16%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/reset_estimator__type_support.cpp.o[0m
+[21.618s] [ 17%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/restart_estimator__type_support.cpp.o[0m
+[22.259s] [ 17%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/resume_estimator__type_support.cpp.o[0m
+[22.905s] [ 18%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/start_estimator__type_support.cpp.o[0m
+[23.563s] [ 19%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/stop_estimator__type_support.cpp.o[0m
+[24.290s] [ 20%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/get_whitelist__type_support.cpp.o[0m
+[25.069s] [ 20%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/get_estimator_description__type_support.cpp.o[0m
+[25.722s] [ 21%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/get_active_estimators__type_support.cpp.o[0m
+[25.725s] [ 21%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/joint_state_with_acceleration__type_support.cpp.o[0m
+[25.729s] [ 22%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/srv/detail/dds_fastrtps/get_blacklist__type_support.cpp.o[0m
+[26.959s] [ 23%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/sensor_fusion__type_support.cpp.o[0m
+[26.972s] [ 24%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/leg_odometry__type_support.cpp.o[0m
+[27.034s] [ 24%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/state_estimator_msgs/msg/detail/dds_fastrtps/contact_detection__type_support.cpp.o[0m
+[27.815s] [ 24%] [32m[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[28.042s] [ 24%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_cpp
+[28.070s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[28.075s] [ 25%] [34m[1mGenerating C code for ROS interfaces[0m
+[29.110s] [ 27%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/attitude__type_support.cpp.o[0m
+[29.110s] [ 27%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/contact_detection__type_support.cpp.o[0m
+[29.110s] [ 27%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/leg_odometry__type_support.cpp.o[0m
+[29.593s] [ 27%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/pause_estimator__type_support.cpp.o[0m
+[29.603s] [ 28%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/list_all_estimators__type_support.cpp.o[0m
+[29.603s] [ 29%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/get_whitelist__type_support.cpp.o[0m
+[29.620s] [ 30%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/restart_estimator__type_support.cpp.o[0m
+[30.099s] [ 30%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/resume_estimator__type_support.cpp.o[0m
+[30.141s] [ 31%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/reset_estimator__type_support.cpp.o[0m
+[30.154s] [ 31%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/get_estimator_description__type_support.cpp.o[0m
+[30.156s] [ 32%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/get_blacklist__type_support.cpp.o[0m
+[30.163s] [ 33%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/start_estimator__type_support.cpp.o[0m
+[30.672s] [ 34%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/stop_estimator__type_support.cpp.o[0m
+[30.684s] [ 35%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/srv/get_active_estimators__type_support.cpp.o[0m
+[30.703s] [ 35%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/joint_state_with_acceleration__type_support.cpp.o[0m
+[30.835s] [ 36%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/attitude__functions.c.o[0m
+[30.864s] [ 37%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/contact_detection__functions.c.o[0m
+[30.903s] [ 38%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/state_estimator_msgs/msg/sensor_fusion__type_support.cpp.o[0m
+[31.005s] [ 39%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/get_estimator_description__functions.c.o[0m
+[31.007s] [ 40%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/get_blacklist__functions.c.o[0m
+[31.136s] [ 41%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/list_all_estimators__functions.c.o[0m
+[31.195s] [ 42%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/pause_estimator__functions.c.o[0m
+[31.285s] [ 43%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/resume_estimator__functions.c.o[0m
+[31.317s] [ 44%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/stop_estimator__functions.c.o[0m
+[31.410s] [ 44%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/start_estimator__functions.c.o[0m
+[31.429s] [ 45%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/restart_estimator__functions.c.o[0m
+[31.497s] [ 45%] [32m[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_cpp.so[0m
+[31.531s] [ 45%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/reset_estimator__functions.c.o[0m
+[31.535s] [ 45%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/get_whitelist__functions.c.o[0m
+[31.610s] [ 45%] Built target state_estimator_msgs__rosidl_typesupport_cpp
+[31.638s] [ 45%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/srv/detail/get_active_estimators__functions.c.o[0m
+[31.649s] [ 46%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/joint_state_with_acceleration__functions.c.o[0m
+[31.759s] [ 47%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/sensor_fusion__functions.c.o[0m
+[31.765s] [ 47%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_c.dir/rosidl_generator_c/state_estimator_msgs/msg/detail/leg_odometry__functions.c.o[0m
+[31.871s] [ 48%] [32m[1mLinking C shared library libstate_estimator_msgs__rosidl_generator_c.so[0m
+[31.977s] [ 48%] Built target state_estimator_msgs__rosidl_generator_c
+[32.002s] [ 49%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[32.007s] [ 50%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[33.731s] [ 51%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/attitude__type_support.c.o[0m
+[33.738s] [ 51%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/contact_detection__type_support.c.o[0m
+[33.808s] [ 51%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/attitude__type_support_c.cpp.o[0m
+[33.808s] [ 52%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/list_all_estimators__type_support.c.o[0m
+[33.810s] [ 53%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/contact_detection__type_support_c.cpp.o[0m
+[33.818s] [ 54%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/get_whitelist__type_support.c.o[0m
+[33.909s] [ 54%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/get_estimator_description__type_support.c.o[0m
+[33.983s] [ 55%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/get_blacklist__type_support.c.o[0m
+[34.079s] [ 56%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/get_active_estimators__type_support.c.o[0m
+[34.171s] [ 57%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support.c.o[0m
+[34.171s] [ 57%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/sensor_fusion__type_support.c.o[0m
+[34.185s] [ 58%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/get_estimator_description__type_support_c.cpp.o[0m
+[34.267s] [ 59%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/msg/detail/leg_odometry__type_support.c.o[0m
+[34.279s] [ 59%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/pause_estimator__type_support.c.o[0m
+[34.398s] [ 60%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/reset_estimator__type_support.c.o[0m
+[34.414s] [ 60%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/list_all_estimators__type_support_c.cpp.o[0m
+[34.487s] [ 61%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/get_whitelist__type_support_c.cpp.o[0m
+[34.491s] [ 61%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/resume_estimator__type_support.c.o[0m
+[34.587s] [ 62%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/restart_estimator__type_support.c.o[0m
+[34.664s] [ 63%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/start_estimator__type_support.c.o[0m
+[34.752s] [ 64%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/state_estimator_msgs/srv/detail/stop_estimator__type_support.c.o[0m
+[34.834s] [ 64%] [32m[1mLinking C shared library libstate_estimator_msgs__rosidl_typesupport_introspection_c.so[0m
+[34.845s] [ 65%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/reset_estimator__type_support_c.cpp.o[0m
+[34.934s] [ 65%] Built target state_estimator_msgs__rosidl_typesupport_introspection_c
+[34.968s] [ 66%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35.026s] [ 67%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/resume_estimator__type_support_c.cpp.o[0m
+[35.160s] [ 68%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/start_estimator__type_support_c.cpp.o[0m
+[35.223s] [ 68%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/restart_estimator__type_support_c.cpp.o[0m
+[35.864s] [ 68%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/stop_estimator__type_support_c.cpp.o[0m
+[36.589s] [ 68%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/attitude__type_support.cpp.o[0m
+[36.700s] [ 69%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/joint_state_with_acceleration__type_support.cpp.o[0m
+[36.808s] [ 70%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/get_active_estimators__type_support.cpp.o[0m
+[36.876s] [ 70%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/get_blacklist__type_support.cpp.o[0m
+[36.946s] [ 71%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/get_estimator_description__type_support.cpp.o[0m
+[36.963s] [ 72%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/pause_estimator__type_support_c.cpp.o[0m
+[37.033s] [ 72%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/list_all_estimators__type_support.cpp.o[0m
+[37.099s] [ 73%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/pause_estimator__type_support.cpp.o[0m
+[37.183s] [ 74%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/reset_estimator__type_support.cpp.o[0m
+[37.257s] [ 74%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/restart_estimator__type_support.cpp.o[0m
+[37.357s] [ 75%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/resume_estimator__type_support.cpp.o[0m
+[37.436s] [ 76%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/start_estimator__type_support.cpp.o[0m
+[37.507s] [ 76%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/stop_estimator__type_support.cpp.o[0m
+[37.572s] [ 77%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/srv/get_whitelist__type_support.cpp.o[0m
+[37.649s] [ 77%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/sensor_fusion__type_support.cpp.o[0m
+[37.652s] [ 77%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/get_blacklist__type_support_c.cpp.o[0m
+[37.710s] [ 78%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/leg_odometry__type_support.cpp.o[0m
+[37.778s] [ 79%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/state_estimator_msgs/msg/contact_detection__type_support.cpp.o[0m
+[37.848s] [ 80%] [32m[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_c.so[0m
+[37.967s] [ 80%] Built target state_estimator_msgs__rosidl_typesupport_c
+[38.270s] [ 81%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/srv/detail/get_active_estimators__type_support_c.cpp.o[0m
+[38.863s] [ 82%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/joint_state_with_acceleration__type_support_c.cpp.o[0m
+[39.496s] [ 82%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/sensor_fusion__type_support_c.cpp.o[0m
+[40.048s] [ 83%] [32mBuilding CXX object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/state_estimator_msgs/msg/detail/leg_odometry__type_support_c.cpp.o[0m
+[40.603s] [ 84%] [32m[1mLinking CXX shared library libstate_estimator_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[40.782s] [ 84%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_c
+[40.828s] [ 84%] Built target state_estimator_msgs
+[40.884s] [ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[44.549s] [ 85%] Built target state_estimator_msgs__py
+[44.595s] [ 85%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_attitude_s.c.o[0m
+[44.871s] [ 86%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_reset_estimator_s.c.o[0m
+[45.060s] [ 86%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_restart_estimator_s.c.o[0m
+[45.293s] [ 87%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_resume_estimator_s.c.o[0m
+[45.293s] [ 88%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_pause_estimator_s.c.o[0m
+[45.495s] [ 89%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_start_estimator_s.c.o[0m
+[45.499s] [ 89%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_stop_estimator_s.c.o[0m
+[45.711s] [ 89%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_list_all_estimators_s.c.o[0m
+[45.897s] [ 90%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_get_whitelist_s.c.o[0m
+[46.162s] [ 90%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_get_blacklist_s.c.o[0m
+[46.170s] [ 91%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_get_estimator_description_s.c.o[0m
+[46.486s] [ 92%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/srv/_get_active_estimators_s.c.o[0m
+[46.486s] [ 93%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_joint_state_with_acceleration_s.c.o[0m
+[46.762s] [ 93%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_sensor_fusion_s.c.o[0m
+[46.807s] [ 94%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_leg_odometry_s.c.o[0m
+[46.947s] [ 95%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_generator_py.dir/rosidl_generator_py/state_estimator_msgs/msg/_contact_detection_s.c.o[0m
+[47.123s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/state_estimator_msgs/libstate_estimator_msgs__rosidl_generator_py.so[0m
+[47.225s] [ 96%] Built target state_estimator_msgs__rosidl_generator_py
+[47.268s] [ 98%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[47.269s] [ 98%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[47.593s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[47.600s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[47.693s] [ 99%] Built target state_estimator_msgs__rosidl_typesupport_fastrtps_c__pyext
+[47.696s] [ 99%] Built target state_estimator_msgs__rosidl_typesupport_introspection_c__pyext
+[47.737s] [100%] [32mBuilding C object CMakeFiles/state_estimator_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/state_estimator_msgs/_state_estimator_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[48.022s] [100%] [32m[1mLinking C shared library rosidl_generator_py/state_estimator_msgs/state_estimator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[48.110s] [100%] Built target state_estimator_msgs__rosidl_typesupport_c__pyext
