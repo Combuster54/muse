@@ -138,7 +138,6 @@ install(DIRECTORY launch/
 
 # Install Python launch files with executable permissions
 install(PROGRAMS 
-  launch/state_estimator_xml.launch.py
   launch/state_estimator.launch.py
   DESTINATION share/${PROJECT_NAME}/launch
 )

@@ -1,0 +1,432 @@
+[0.171s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.171s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x75b98b133250>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75b98b26c730>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75b98b26c730>>)
+[0.337s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.338s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extensions ['ignore', 'ignore_ament_install']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/iit_commons) by extension 'ros'
+[0.357s] DEBUG:colcon.colcon_core.package_identification:Package 'src/iit_commons' with type 'ros.ament_cmake' and name 'iit_commons'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extension 'ros'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extensions ['cmake', 'python']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extension 'cmake'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extension 'python'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extensions ['python_setup_py']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp) by extension 'python_setup_py'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extension 'ignore'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extension 'ignore_ament_install'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extensions ['colcon_pkg']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extension 'colcon_pkg'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extensions ['colcon_meta']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extension 'colcon_meta'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extensions ['ros']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extension 'ros'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extensions ['cmake', 'python']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extension 'cmake'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extension 'python'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extensions ['python_setup_py']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/config) by extension 'python_setup_py'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/cpp) by extension 'ignore'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/cpp) ignored
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extension 'ignore_ament_install'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extensions ['colcon_pkg']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extension 'colcon_pkg'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extensions ['colcon_meta']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extension 'colcon_meta'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extensions ['ros']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extension 'ros'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extensions ['cmake', 'python']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extension 'cmake'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extension 'python'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extensions ['python_setup_py']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/eval) by extension 'python_setup_py'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/python) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/python) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/python) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/kiss-icp/ros) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kiss-icp/ros' with type 'ros.ament_cmake' and name 'kiss_icp'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extension 'ignore_ament_install'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extensions ['colcon_pkg']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extension 'colcon_pkg'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extensions ['colcon_meta']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extension 'colcon_meta'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extensions ['ros']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator) by extension 'ros'
+[0.368s] DEBUG:colcon.colcon_core.package_identification:Package 'src/state_estimator' with type 'ros.ament_cmake' and name 'state_estimator'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/state_estimator_msgs) by extension 'ros'
+[0.369s] DEBUG:colcon.colcon_core.package_identification:Package 'src/state_estimator_msgs' with type 'ros.ament_cmake' and name 'state_estimator_msgs'
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.397s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.397s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.397s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.398s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.398s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.398s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.398s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.398s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.398s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.398s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.399s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install
+[0.399s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/go2/go2_ws/install
+[0.400s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 282 installed packages in /opt/ros/humble
+[0.402s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'cmake_target' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'cmake_clean_cache' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'cmake_clean_first' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'cmake_force_configure' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'ament_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'catkin_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'iit_commons' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.442s] DEBUG:colcon.colcon_core.verb:Building package 'iit_commons' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons', 'merge_install': False, 'path': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/iit_commons', 'symlink_install': False, 'test_result_base': None}
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'kiss_icp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.443s] DEBUG:colcon.colcon_core.verb:Building package 'kiss_icp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp', 'merge_install': False, 'path': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/ros', 'symlink_install': False, 'test_result_base': None}
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'state_estimator_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.443s] DEBUG:colcon.colcon_core.verb:Building package 'state_estimator_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs', 'merge_install': False, 'path': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'cmake_force_configure' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'ament_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'state_estimator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'state_estimator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator', 'merge_install': False, 'path': '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator', 'symlink_install': False, 'test_result_base': None}
+[0.444s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.445s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.445s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs' with build type 'ament_cmake'
+[0.445s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs'
+[0.448s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.448s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.448s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.452s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/iit_commons' with build type 'ament_cmake'
+[0.453s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/iit_commons'
+[0.453s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.453s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.460s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/ros' with build type 'ament_cmake'
+[0.460s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/ros'
+[0.461s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.461s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs -DCMAKE_INSTALL_PREFIX=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs
+[0.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/iit_commons -DCMAKE_INSTALL_PREFIX=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons
+[0.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/ros -DCMAKE_INSTALL_PREFIX=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp
+[2.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/iit_commons -DCMAKE_INSTALL_PREFIX=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons
+[2.191s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12
+[4.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs -DCMAKE_INSTALL_PREFIX=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs
+[4.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs -- -j12 -l12
+[18.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/ros -DCMAKE_INSTALL_PREFIX=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp
+[18.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp -- -j12 -l12
+[18.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs -- -j12 -l12
+[18.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs
+[18.999s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(state_estimator_msgs)
+[18.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator_msgs
+[19.004s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs' for CMake module files
+[19.006s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs' for CMake config files
+[19.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimator_msgs', 'cmake_prefix_path')
+[19.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/cmake_prefix_path.ps1'
+[19.009s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/cmake_prefix_path.dsv'
+[19.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/cmake_prefix_path.sh'
+[19.012s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib'
+[19.013s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimator_msgs', 'ld_library_path_lib')
+[19.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/ld_library_path_lib.ps1'
+[19.014s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/ld_library_path_lib.dsv'
+[19.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/ld_library_path_lib.sh'
+[19.016s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/bin'
+[19.016s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib/pkgconfig/state_estimator_msgs.pc'
+[19.017s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib/python3.10/site-packages'
+[19.018s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/bin'
+[19.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.ps1'
+[19.020s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.dsv'
+[19.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.sh'
+[19.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.bash'
+[19.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.zsh'
+[19.034s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/colcon-core/packages/state_estimator_msgs)
+[19.038s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(state_estimator_msgs)
+[19.038s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs' for CMake module files
+[19.039s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs' for CMake config files
+[19.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimator_msgs', 'cmake_prefix_path')
+[19.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/cmake_prefix_path.ps1'
+[19.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/cmake_prefix_path.dsv'
+[19.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/cmake_prefix_path.sh'
+[19.045s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib'
+[19.045s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimator_msgs', 'ld_library_path_lib')
+[19.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/ld_library_path_lib.ps1'
+[19.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/ld_library_path_lib.dsv'
+[19.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/hook/ld_library_path_lib.sh'
+[19.049s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/bin'
+[19.049s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib/pkgconfig/state_estimator_msgs.pc'
+[19.049s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib/python3.10/site-packages'
+[19.050s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/bin'
+[19.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.ps1'
+[19.053s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.dsv'
+[19.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.sh'
+[19.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.bash'
+[19.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/state_estimator_msgs/package.zsh'
+[19.057s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/share/colcon-core/packages/state_estimator_msgs)
+[19.058s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator' with build type 'ament_cmake'
+[19.059s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator'
+[19.059s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.059s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator': CMAKE_PREFIX_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs:/home/go2/go2_ws/install/go2_description:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons:/opt/ros/humble LD_LIBRARY_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator -DCMAKE_INSTALL_PREFIX=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator
+[29.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator' returned '0': CMAKE_PREFIX_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs:/home/go2/go2_ws/install/go2_description:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons:/opt/ros/humble LD_LIBRARY_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator -DCMAKE_INSTALL_PREFIX=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator
+[29.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator': CMAKE_PREFIX_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs:/home/go2/go2_ws/install/go2_description:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons:/opt/ros/humble LD_LIBRARY_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator -- -j12 -l12
+[61.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons -- -j12 -l12
+[61.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons
+[61.474s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iit_commons)
+[61.474s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons' for CMake module files
+[61.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/iit_commons
+[61.475s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons' for CMake config files
+[61.476s] Level 1:colcon.colcon_core.shell:create_environment_hook('iit_commons', 'cmake_prefix_path')
+[61.476s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/cmake_prefix_path.ps1'
+[61.477s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/cmake_prefix_path.dsv'
+[61.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/cmake_prefix_path.sh'
+[61.478s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib'
+[61.478s] Level 1:colcon.colcon_core.shell:create_environment_hook('iit_commons', 'ld_library_path_lib')
+[61.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/ld_library_path_lib.ps1'
+[61.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/ld_library_path_lib.dsv'
+[61.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/ld_library_path_lib.sh'
+[61.480s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/bin'
+[61.480s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib/pkgconfig/iit_commons.pc'
+[61.480s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib/python3.10/site-packages'
+[61.480s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/bin'
+[61.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.ps1'
+[61.481s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.dsv'
+[61.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.sh'
+[61.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.bash'
+[61.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.zsh'
+[61.483s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/colcon-core/packages/iit_commons)
+[61.485s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iit_commons)
+[61.485s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons' for CMake module files
+[61.485s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons' for CMake config files
+[61.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('iit_commons', 'cmake_prefix_path')
+[61.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/cmake_prefix_path.ps1'
+[61.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/cmake_prefix_path.dsv'
+[61.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/cmake_prefix_path.sh'
+[61.488s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib'
+[61.488s] Level 1:colcon.colcon_core.shell:create_environment_hook('iit_commons', 'ld_library_path_lib')
+[61.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/ld_library_path_lib.ps1'
+[61.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/ld_library_path_lib.dsv'
+[61.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/hook/ld_library_path_lib.sh'
+[61.489s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/bin'
+[61.489s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib/pkgconfig/iit_commons.pc'
+[61.490s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib/python3.10/site-packages'
+[61.490s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/bin'
+[61.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.ps1'
+[61.491s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.dsv'
+[61.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.sh'
+[61.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.bash'
+[61.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/iit_commons/package.zsh'
+[61.493s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/share/colcon-core/packages/iit_commons)
+[64.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp -- -j12 -l12
+[64.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp
+[64.446s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kiss_icp)
+[64.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp
+[64.446s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp' for CMake module files
+[64.447s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp' for CMake config files
+[64.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('kiss_icp', 'cmake_prefix_path')
+[64.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/cmake_prefix_path.ps1'
+[64.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/cmake_prefix_path.dsv'
+[64.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/cmake_prefix_path.sh'
+[64.451s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib'
+[64.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('kiss_icp', 'ld_library_path_lib')
+[64.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/ld_library_path_lib.ps1'
+[64.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/ld_library_path_lib.dsv'
+[64.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/ld_library_path_lib.sh'
+[64.453s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/bin'
+[64.453s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib/pkgconfig/kiss_icp.pc'
+[64.453s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib/python3.10/site-packages'
+[64.453s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/bin'
+[64.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.ps1'
+[64.454s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.dsv'
+[64.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.sh'
+[64.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.bash'
+[64.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.zsh'
+[64.456s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/colcon-core/packages/kiss_icp)
+[64.458s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kiss_icp)
+[64.458s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp' for CMake module files
+[64.459s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp' for CMake config files
+[64.459s] Level 1:colcon.colcon_core.shell:create_environment_hook('kiss_icp', 'cmake_prefix_path')
+[64.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/cmake_prefix_path.ps1'
+[64.460s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/cmake_prefix_path.dsv'
+[64.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/cmake_prefix_path.sh'
+[64.462s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib'
+[64.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('kiss_icp', 'ld_library_path_lib')
+[64.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/ld_library_path_lib.ps1'
+[64.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/ld_library_path_lib.dsv'
+[64.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/hook/ld_library_path_lib.sh'
+[64.463s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/bin'
+[64.463s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib/pkgconfig/kiss_icp.pc'
+[64.464s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib/python3.10/site-packages'
+[64.464s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/bin'
+[64.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.ps1'
+[64.466s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.dsv'
+[64.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.sh'
+[64.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.bash'
+[64.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.zsh'
+[64.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/colcon-core/packages/kiss_icp)
+[120.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator' returned '0': CMAKE_PREFIX_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs:/home/go2/go2_ws/install/go2_description:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons:/opt/ros/humble LD_LIBRARY_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator -- -j12 -l12
+[120.983s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator': CMAKE_PREFIX_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs:/home/go2/go2_ws/install/go2_description:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons:/opt/ros/humble LD_LIBRARY_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator
+[121.085s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(state_estimator)
+[121.085s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator' for CMake module files
+[121.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator' returned '0': CMAKE_PREFIX_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs:/home/go2/go2_ws/install/go2_description:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons:/opt/ros/humble LD_LIBRARY_PATH=/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator_msgs/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib:/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/iit_commons/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/state_estimator
+[121.086s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator' for CMake config files
+[121.086s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimator', 'cmake_prefix_path')
+[121.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/cmake_prefix_path.ps1'
+[121.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/cmake_prefix_path.dsv'
+[121.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/cmake_prefix_path.sh'
+[121.088s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib'
+[121.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimator', 'ld_library_path_lib')
+[121.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/ld_library_path_lib.ps1'
+[121.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/ld_library_path_lib.dsv'
+[121.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/ld_library_path_lib.sh'
+[121.089s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/bin'
+[121.089s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib/pkgconfig/state_estimator.pc'
+[121.090s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib/python3.10/site-packages'
+[121.090s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/bin'
+[121.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.ps1'
+[121.091s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.dsv'
+[121.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.sh'
+[121.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.bash'
+[121.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.zsh'
+[121.093s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/colcon-core/packages/state_estimator)
+[121.094s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(state_estimator)
+[121.094s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator' for CMake module files
+[121.095s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator' for CMake config files
+[121.095s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimator', 'cmake_prefix_path')
+[121.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/cmake_prefix_path.ps1'
+[121.096s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/cmake_prefix_path.dsv'
+[121.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/cmake_prefix_path.sh'
+[121.097s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib'
+[121.097s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimator', 'ld_library_path_lib')
+[121.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/ld_library_path_lib.ps1'
+[121.098s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/ld_library_path_lib.dsv'
+[121.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/hook/ld_library_path_lib.sh'
+[121.098s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/bin'
+[121.098s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib/pkgconfig/state_estimator.pc'
+[121.099s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib/python3.10/site-packages'
+[121.099s] Level 1:colcon.colcon_core.environment:checking '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/bin'
+[121.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.ps1'
+[121.100s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.dsv'
+[121.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.sh'
+[121.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.bash'
+[121.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.zsh'
+[121.101s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/colcon-core/packages/state_estimator)
+[121.102s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[121.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[121.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[121.103s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[121.146s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[121.147s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[121.147s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[121.147s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[121.147s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[121.147s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[121.148s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/local_setup.ps1'
+[121.149s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/_local_setup_util_ps1.py'
+[121.150s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/setup.ps1'
+[121.152s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/local_setup.sh'
+[121.152s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/_local_setup_util_sh.py'
+[121.153s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/setup.sh'
+[121.154s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/local_setup.bash'
+[121.155s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/setup.bash'
+[121.156s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/local_setup.zsh'
+[121.157s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/setup.zsh'

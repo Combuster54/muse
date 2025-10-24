@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/algebra-test.dir/src/algebra_test.cpp.o -o algebra-test  gtest/libgtest_main.a gtest/libgtest.a -lpthread -pthread 

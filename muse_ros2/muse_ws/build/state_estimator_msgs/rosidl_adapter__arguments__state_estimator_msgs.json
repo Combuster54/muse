@@ -1,0 +1,21 @@
+{
+  "package_name": "state_estimator_msgs",
+  "non_idl_tuples": [
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:msg/Attitude.msg",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:msg/ContactDetection.msg",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:msg/LegOdometry.msg",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:msg/SensorFusion.msg",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:msg/JointStateWithAcceleration.msg",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/GetActiveEstimators.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/GetBlacklist.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/GetEstimatorDescription.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/GetWhitelist.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/ListAllEstimators.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/PauseEstimator.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/ResetEstimator.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/RestartEstimator.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/ResumeEstimator.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/StartEstimator.srv",
+    "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator_msgs:srv/StopEstimator.srv"
+  ]
+}

@@ -1,0 +1,256 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-96598b2f4e97eba8a148.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						3,
+						4,
+						7
+					]
+				},
+				{
+					"build" : "kiss_icp",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-kiss_icp-Release-04cf75580398935803dd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/cpp/kiss_icp"
+				},
+				{
+					"build" : "_deps/sophus-build",
+					"jsonFile" : "directory-_deps.sophus-build-Release-a1bba93c3b64414320cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp/_deps/sophus-src",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "_deps/tessil-build",
+					"jsonFile" : "directory-_deps.tessil-build-Release-d43d6feb51d9ab98ce12.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp/_deps/tessil-src"
+				},
+				{
+					"build" : "kiss_icp/core",
+					"jsonFile" : "directory-kiss_icp.core-Release-e94c3aeaa449ff91af90.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/cpp/kiss_icp/core",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "kiss_icp/metrics",
+					"jsonFile" : "directory-kiss_icp.metrics-Release-9f0f6660d8784406892a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/cpp/kiss_icp/metrics",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "kiss_icp/pipeline",
+					"jsonFile" : "directory-kiss_icp.pipeline-Release-6c794fde2e6acbfdd909.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/cpp/kiss_icp/pipeline",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "kiss_icp",
+					"targetIndexes" : 
+					[
+						1,
+						3,
+						4,
+						7
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						4,
+						5,
+						6
+					],
+					"name" : "kiss_icp_cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Sophus",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "tsl-robin-map",
+					"parentIndex" : 1
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "core::@f15dea1d0e2072c61095",
+					"jsonFile" : "target-core-Release-6826539f4aaf1fe97223.json",
+					"name" : "core",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kiss_icp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kiss_icp_uninstall-Release-ba8ddefce547ddc19b5b.json",
+					"name" : "kiss_icp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "metrics::@83fde38ab14997601bd9",
+					"jsonFile" : "target-metrics-Release-98d55244f55fc7cfd3ad.json",
+					"name" : "metrics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "odometry_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-odometry_component-Release-25e7d0cf175ac82fd2c4.json",
+					"name" : "odometry_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "odometry_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-odometry_node-Release-e23eb887c745ccc0b3b9.json",
+					"name" : "odometry_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "other::@0ea949b180ce896eafe4",
+					"jsonFile" : "target-other-Release-f0ae1b73d1fcbf143f40.json",
+					"name" : "other",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "pipeline::@4dfa1c09646d329e3f37",
+					"jsonFile" : "target-pipeline-Release-6b59656c9354063e1ab3.json",
+					"name" : "pipeline",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-2fb67480a045c912ddff.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp",
+		"source" : "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/kiss-icp/ros"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,39 @@
+[0.031s] Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp -- -j12 -l12
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target odometry_node[0m
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target metrics[0m
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target core[0m
+[0.117s] [ 14%] Built target metrics
+[0.118s] [ 28%] Built target odometry_node
+[0.146s] [ 71%] Built target core
+[0.168s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.190s] [ 85%] Built target pipeline
+[0.210s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[0.243s] [100%] Built target odometry_component
+[0.261s] Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp -- -j12 -l12
+[0.263s] Invoking command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp
+[0.274s] -- Install configuration: "Release"
+[0.275s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib/kiss_icp/odometry_node
+[0.275s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/lib/libodometry_component.so
+[0.275s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp//launch
+[0.276s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp//launch/odometry.launch.py
+[0.276s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp//launch/odometry.launch
+[0.276s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp//rviz
+[0.276s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp//rviz/kiss_icp_ros2.rviz
+[0.276s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp//rviz/kiss_icp_ros1.rviz
+[0.277s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/ament_index/resource_index/package_run_dependencies/kiss_icp
+[0.277s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/ament_index/resource_index/parent_prefix_path/kiss_icp
+[0.277s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.sh
+[0.277s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.dsv
+[0.277s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/environment/path.sh
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/environment/path.dsv
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/local_setup.bash
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/local_setup.sh
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/local_setup.zsh
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/local_setup.dsv
+[0.278s] -- Installing: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.dsv
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/ament_index/resource_index/packages/kiss_icp
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/ament_index/resource_index/rclcpp_components/kiss_icp
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+[0.278s] -- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/kiss_icp/share/kiss_icp/package.xml
+[0.279s] Invoked command in '/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/build/kiss_icp

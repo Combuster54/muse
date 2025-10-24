@@ -1,0 +1,109 @@
+[35m[1mConsolidate compiler generated dependencies of target state_estimator_plugins[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/state_estimator_plugins.dir/src/plugins/leg_odometry_plugin.cpp.o[0m
+In file included from [01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/include/state_estimator/plugin.hpp:5[m[K,
+                 from [01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:9[m[K:
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/include/state_estimator/Robot.hpp:[m[K In constructor ‘[01m[Kstate_estimator::Robot::Robot(state_estimator::Robot&&)[m[K’:
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/include/state_estimator/Robot.hpp:25:23:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kthat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   25 |         Robot([01;35m[KRobot&& that[m[K) { }
+      |               [01;35m[K~~~~~~~~^~~~[m[K
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:[m[K In constructor ‘[01m[Kstate_estimator_plugins::LegOdometryPlugin::LegOdometryPlugin()[m[K’:
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:270:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstate_estimator_plugins::LegOdometryPlugin::pub_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  270 |                 rclcpp::Publisher<state_estimator_msgs::msg::LegOdometry>::SharedPtr [01;35m[Kpub_[m[K;
+      |                                                                                      [01;35m[K^~~~[m[K
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:268:78:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Imu_<std::allocator<void> >, state_estimator_msgs::msg::JointStateWithAcceleration_<std::allocator<void> >, state_estimator_msgs::msg::ContactDetection_<std::allocator<void> >, state_estimator_msgs::msg::Attitude_<std::allocator<void> > > > > state_estimator_plugins::LegOdometryPlugin::sync_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  268 |                 std::shared_ptr<message_filters::Synchronizer<MySyncPolicy>> [01;35m[Ksync_[m[K;
+      |                                                                              [01;35m[K^~~~~[m[K
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:59:17:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   59 |                 [01;35m[KLegOdometryPlugin[m[K():
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:[m[K In member function ‘[01m[Kvoid state_estimator_plugins::LegOdometryPlugin::callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:189:49:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  189 |                         if ([01;35m[Kjs->position.size() != model_.nq[m[K || js->velocity.size() != model_.nv) {
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:189:85:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  189 |                         if (js->position.size() != model_.nq || [01;35m[Kjs->velocity.size() != model_.nv[m[K) {
+      |                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:194:46:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  194 |                         for (size_t i = 0; [01;35m[Ki < model_.nq[m[K; ++i)
+      |                                            [01;35m[K~~^~~~~~~~~~~[m[K
+[01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:197:46:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  197 |                         for (size_t i = 0; [01;35m[Ki < model_.nv[m[K; ++i)
+      |                                            [01;35m[K~~^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/pinocchio/parsers/urdf.hpp:351[m[K,
+                 from [01m[K/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/src/state_estimator/src/plugins/leg_odometry_plugin.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:[m[K In member function ‘[01m[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelRevoluteTpl<double, 0, 0>; TypeY = pinocchio::JointModelRevoluteTpl<double, 0, 1>; TypeZ = pinocchio::JointModelRevoluteTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelRevoluteUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl][m[K’:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:553:9:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  553 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:[m[K In member function ‘[01m[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelPrismaticTpl<double, 0, 0>; TypeY = pinocchio::JointModelPrismaticTpl<double, 0, 1>; TypeZ = pinocchio::JointModelPrismaticTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelPrismaticUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl][m[K’:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:553:9:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  553 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:[m[K In member function ‘[01m[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelRevoluteUnboundedTpl<double, 0, 0>; TypeY = pinocchio::JointModelRevoluteUnboundedTpl<double, 0, 1>; TypeZ = pinocchio::JointModelRevoluteUnboundedTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelRevoluteUnboundedUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl][m[K’:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:553:9:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  553 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K
+[ 25%] [32m[1mLinking CXX shared library libstate_estimator_plugins.so[0m
+[ 62%] Built target state_estimator_plugins
+[35m[1mConsolidate compiler generated dependencies of target state_estimator_node[0m
+[ 75%] [32m[1mLinking CXX executable state_estimator_node[0m
+[100%] Built target state_estimator_node
+-- Install configuration: ""
+-- Installing: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib/libstate_estimator_plugins.so
+-- Set runtime path of "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib/libstate_estimator_plugins.so" to ""
+-- Installing: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib/state_estimator/state_estimator_node
+-- Set runtime path of "/home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/lib/state_estimator/state_estimator_node" to ""
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/state_estimator_plugins.xml
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Services.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/lib.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/EigenExtra.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers/XKF.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers/NLO.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers/EKF.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Observers/Observer.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/state_estimator_node.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Robot.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/plugin.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Models
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Models/attitude_bias_NLO.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Models/sensor_fusion.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Models/attitude_bias_XKF.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/plugin_base.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/include/state_estimator/Estimator.hpp
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/timeout.yaml
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/pluginlist.yaml
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/launch/state_estimator.launch.py
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config/attitude_plugin.yaml
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config/sensor_fusion.yaml
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config/leg_odometry.yaml
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/config/contact_plugin.yaml
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/urdfs
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/urdfs/aliengo.urdf
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/urdfs/anymal.urdf
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/state_estimator_plugins.xml
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/library_path.sh
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/library_path.dsv
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/ament_index/resource_index/package_run_dependencies/state_estimator
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/ament_index/resource_index/parent_prefix_path/state_estimator
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/ament_prefix_path.sh
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/path.sh
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/environment/path.dsv
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/local_setup.bash
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/local_setup.sh
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/local_setup.zsh
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/local_setup.dsv
+-- Installing: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.dsv
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/ament_index/resource_index/packages/state_estimator
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/ament_index/resource_index/state_estimator__pluginlib__plugin/state_estimator
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/state_estimatorConfig.cmake
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/cmake/state_estimatorConfig-version.cmake
+-- Up-to-date: /home/go2/go2_ws/src/muse/muse_ros2/muse_ws/install/state_estimator/share/state_estimator/package.xml
