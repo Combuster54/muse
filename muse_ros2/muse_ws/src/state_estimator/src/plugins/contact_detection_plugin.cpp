@@ -93,7 +93,10 @@ private:
     stance_rh = (force_rh > grf_threshold_);
 
     // Publicación
-    msg_.header.stamp = node_->get_clock()->now();
+    rclcpp::Time now = node_->get_clock()->now();
+    int64_t ns = now.nanoseconds();
+    msg_.header.stamp.sec = static_cast<int32_t>(ns / 1000000000LL);
+    msg_.header.stamp.nanosec = static_cast<uint32_t>(ns % 1000000000LL);
     msg_.stance_lf = stance_lf;
     msg_.stance_rf = stance_rf;
     msg_.stance_lh = stance_lh;

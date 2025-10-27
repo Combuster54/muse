@@ -70,7 +70,7 @@ namespace state_estimator_plugins
 
             // Defaults
             std::string imu_topic = "imu";
-            std::string pub_topic = "attitude";
+            std::string pub_topic = "/state_estimator/attitude";
             double ki_param = 0.02;
             double kp_param = 10.0;
 
