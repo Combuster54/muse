@@ -2,7 +2,7 @@ state_estimator:
   ros__parameters:
     attitude_estimation_plugin.plugin: "AttitudeEstimationPlugin"
     attitude_estimation_plugin.imu_topic: "/imu"
-    attitude_estimation_plugin.pub_topic: "attitude"
+    attitude_estimation_plugin.pub_topic: "/state_estimator/attitude"
     attitude_estimation_plugin.kp: 10.0
     attitude_estimation_plugin.ki: 0.02
     attitude_estimation_plugin.base_R_imu: [-1.0, 0.0, 0.0,
