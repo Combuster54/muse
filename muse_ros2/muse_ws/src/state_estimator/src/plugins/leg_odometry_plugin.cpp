@@ -6,6 +6,10 @@ la velocidad lineal de la base (rotada al mundo con la actitud), y publica
 todo en state_estimator_msgs/LegOdometry (lin_vel_lf/rf/lh/rh y base_velocity).
 */
 
+//Adapt to use Jointstate
+
+#include "sensor_msgs/msg/joint_state.hpp"
+
 
 #include <pinocchio/parsers/urdf.hpp>
 #include <pinocchio/multibody/data.hpp>
@@ -44,7 +48,8 @@ namespace state_estimator_plugins
 typedef message_filters::sync_policies::ApproximateTime
 <
 	sensor_msgs::msg::Imu,
-	state_estimator_msgs::msg::JointStateWithAcceleration,
+	//state_estimator_msgs::msg::JointStateWithAcceleration,
+	sensor_msgs::msg::JointState,
     state_estimator_msgs::msg::ContactDetection,
     state_estimator_msgs::msg::Attitude
 > 
@@ -53,7 +58,8 @@ ApproximateTimePolicy;
 typedef message_filters::sync_policies::ExactTime
 <
 	sensor_msgs::msg::Imu,
-	state_estimator_msgs::msg::JointStateWithAcceleration,
+	//state_estimator_msgs::msg::JointStateWithAcceleration,
+	sensor_msgs::msg::JointState,
     state_estimator_msgs::msg::ContactDetection,
     state_estimator_msgs::msg::Attitude
 > 
@@ -77,7 +83,8 @@ ExactTimePolicy;
 		~LegOdometryPlugin() 
 		{
 			// Smart pointers will be automatically destroyed
-		}		std::string getName() override { return std::string("LegOdometry"); }
+		}		
+		std::string getName() override { return std::string("LegOdometry"); }
 		std::string getDescription() override { return std::string("Leg Odometry Plugin"); }
 
 		void initialize_() override {
@@ -87,7 +94,7 @@ ExactTimePolicy;
 			std::string urdf_path_param;
 			// node_->declare_parameter("leg_odometry_plugin.urdf_path", "");
 			// urdf_path_param = node_->get_parameter("leg_odometry_plugin.urdf_path").as_string();
-			urdf_path_param = "/home/workstation/ros2_ws/src/unitree_go2_upc/go2_description/xacro/robot.urdf";
+			urdf_path_param = "/home/workstation/ros2_ws/src/go2_upc/go2_description/xacro/robot.urdf";
 			RCLCPP_INFO_STREAM(node_->get_logger(), "URDF path parameter: " << urdf_path_param);
 
 			if (urdf_path_param.empty()) {
@@ -139,10 +146,10 @@ ExactTimePolicy;
 			// Get topic names from parameters
 			RCLCPP_INFO(node_->get_logger(), "Declaring topic parameters...");
 			
-			node_->declare_parameter("leg_odometry_plugin.imu_topic", "/sensors/imu");
-			node_->declare_parameter("leg_odometry_plugin.joint_states_topic", "/state_estimator/joint_states");
+			node_->declare_parameter("leg_odometry_plugin.imu_topic", "/imu");
+			node_->declare_parameter("leg_odometry_plugin.joint_states_topic", "/joint_states");
 			node_->declare_parameter("leg_odometry_plugin.contact_topic", "/state_estimator/contact_detection");
-			node_->declare_parameter("leg_odometry_plugin.attitude_topic", "/attitude");
+			node_->declare_parameter("leg_odometry_plugin.attitude_topic", "/state_estimator/attitude");
 			node_->declare_parameter("leg_odometry_plugin.pub_topic", "/state_estimator/leg_odometry");
 			
 			try {
@@ -167,7 +174,8 @@ ExactTimePolicy;
 			
 			// Set up subscribers using smart pointers
 			imu_sub_ = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::Imu>>(node_, imu_topic);
-			joint_state_sub_ = std::make_shared<message_filters::Subscriber<state_estimator_msgs::msg::JointStateWithAcceleration>>(node_, joint_states_topic);
+			//joint_state_sub_ = std::make_shared<message_filters::Subscriber<state_estimator_msgs::msg::JointStateWithAcceleration>>(node_, joint_states_topic);
+			joint_state_sub_ = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::JointState>>(node_, joint_states_topic);
 			contact_sub_ = std::make_shared<message_filters::Subscriber<state_estimator_msgs::msg::ContactDetection>>(node_, contact_topic);
 			attitude_sub_ = std::make_shared<message_filters::Subscriber<state_estimator_msgs::msg::Attitude>>(node_, attitude_topic);
 
@@ -175,6 +183,7 @@ ExactTimePolicy;
 			sync_->registerCallback(std::bind(&LegOdometryPlugin::callback, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4));
 
 			pub_ = node_->create_publisher<state_estimator_msgs::msg::LegOdometry>(pub_topic, 250);
+			RCLCPP_INFO(node_->get_logger(), "A");
 
 		}
 		void shutdown_() override { }
@@ -185,11 +194,14 @@ ExactTimePolicy;
 		void callback
 		(
 			const sensor_msgs::msg::Imu::ConstSharedPtr& imu,
-			const state_estimator_msgs::msg::JointStateWithAcceleration::ConstSharedPtr& js,
+			//const state_estimator_msgs::msg::JointStateWithAcceleration::ConstSharedPtr& js,
+			const sensor_msgs::msg::JointState::ConstSharedPtr& js,
 			const state_estimator_msgs::msg::ContactDetection::ConstSharedPtr& contact,
 			const state_estimator_msgs::msg::Attitude::ConstSharedPtr& attitude
 		)
 		{
+			RCLCPP_INFO(node_->get_logger(), "CALLBACK");
+
 			// Robot joint states
 			// Fill q and v from joint state
 			Eigen::VectorXd q(model_.nq);
@@ -266,12 +278,14 @@ ExactTimePolicy;
 			}
 
 			pub_->publish(msg_);
+			RCLCPP_INFO(node_->get_logger(), "Hello");
 
 		} // end callback
 	private:
 	
 		std::shared_ptr<message_filters::Subscriber<sensor_msgs::msg::Imu>> imu_sub_;
-		std::shared_ptr<message_filters::Subscriber<state_estimator_msgs::msg::JointStateWithAcceleration>> joint_state_sub_;
+		//std::shared_ptr<message_filters::Subscriber<state_estimator_msgs::msg::JointStateWithAcceleration>> joint_state_sub_;
+		std::shared_ptr<message_filters::Subscriber<sensor_msgs::msg::JointState>> joint_state_sub_;
 		std::shared_ptr<message_filters::Subscriber<state_estimator_msgs::msg::ContactDetection>> contact_sub_;
 		std::shared_ptr<message_filters::Subscriber<state_estimator_msgs::msg::Attitude>> attitude_sub_;
 		std::shared_ptr<message_filters::Synchronizer<MySyncPolicy>> sync_;
