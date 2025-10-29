@@ -173,10 +173,10 @@ namespace state_estimator_plugins
 
             Eigen::Vector3d omega(imu->angular_velocity.x, imu->angular_velocity.y, imu->angular_velocity.z);
             Eigen::Vector3d acc(imu->linear_acceleration.x, imu->linear_acceleration.y, imu->linear_acceleration.z);
-            computeAttitude(omega, acc);
+            computeAttitude(omega, acc, imu);
         }
 
-        void computeAttitude(Eigen::Vector3d &omega, Eigen::Vector3d &acc)
+        void computeAttitude(Eigen::Vector3d &omega, Eigen::Vector3d &acc,const sensor_msgs::msg::Imu::SharedPtr imu)
         {
             if (begin)
             {
@@ -224,15 +224,8 @@ namespace state_estimator_plugins
             omega_filt << tmp.x(), tmp.y(), tmp.z();
             omega_filt *= 2.0;
 
-            // Build and publish message
-            // msg_.header.stamp = node_->get_clock()->now().to_msg();
-            // get current time
-            rclcpp::Time now = node_->get_clock()->now();
-            // convert to integer nanoseconds since epoch
-            int64_t ns = now.nanoseconds();
-            // fill builtin_interfaces::msg::Time (sec, nanosec)
-            msg_.header.stamp.sec = static_cast<int32_t>(ns / 1000000000LL);
-            msg_.header.stamp.nanosec = static_cast<uint32_t>(ns % 1000000000LL);
+            msg_.header.stamp = imu->header.stamp;
+
             msg_.header.frame_id = "base_link";
 
             // fill quaternion (msg layout assumed: std::array<double,4> quaternion)
