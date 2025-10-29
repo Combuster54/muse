@@ -9,7 +9,7 @@ para cada pata (stance_lf, stance_rf, stance_lh, stance_rh).
 #include <rclcpp/rclcpp.hpp>
 
 #include "state_estimator_msgs/msg/contact_detection.hpp"
-#include <std_msgs/msg/float32_multi_array.hpp>
+#include "state_estimator_msgs/msg/foot_force.hpp"
 
 #include <cmath>
 #include <memory>
@@ -22,6 +22,10 @@ namespace state_estimator_plugins
 class ContactDetectionPlugin : public PluginBase
 {
 public:
+
+  std::string foot_force_topic;
+  std::string pub_topic;
+
   ContactDetectionPlugin():
     sub_(nullptr),
     pub_(nullptr),
@@ -37,26 +41,28 @@ public:
   std::string getName() override        { return std::string("ContactDetection"); }
   std::string getDescription() override { return std::string("Contact Detection Plugin"); }
 
+  void get_params(){
+    foot_force_topic =
+      node_->get_parameter("contact_detection_plugin.foot_force_topic").as_string();
+    pub_topic =
+      node_->get_parameter("contact_detection_plugin.pub_topic").as_string();
+    grf_threshold_ =
+      node_->get_parameter("contact_detection_plugin.grf_threshold").as_double();
+  }
   void initialize_() override
   {
     // Parámetros
     node_->declare_parameter("contact_detection_plugin.foot_force_topic", "/foot_force");
-    node_->declare_parameter("contact_detection_plugin.pub_topic",        "/state_estimator/contact_detection");
+    node_->declare_parameter("contact_detection_plugin.pub_topic","/state_estimator/contact_detection");
     node_->declare_parameter("contact_detection_plugin.grf_threshold",    15.0);
 
-    const std::string foot_force_topic =
-      node_->get_parameter("contact_detection_plugin.foot_force_topic").as_string();
-    const std::string pub_topic =
-      node_->get_parameter("contact_detection_plugin.pub_topic").as_string();
-    grf_threshold_ =
-      node_->get_parameter("contact_detection_plugin.grf_threshold").as_double();
-
+    get_params();
     RCLCPP_INFO(node_->get_logger(),
                 "ContactDetectionPlugin: topic='%s', pub='%s', GRF threshold=%.3f",
                 foot_force_topic.c_str(), pub_topic.c_str(), grf_threshold_);
 
-    // Suscriptor a Float32MultiArray con 4 entradas [LF, RF, LH, RH]
-    sub_ = node_->create_subscription<std_msgs::msg::Float32MultiArray>(
+    // Suscriptor a FootForce con 4 entradas [LF, RF, LH, RH]
+    sub_ = node_->create_subscription<state_estimator_msgs::msg::FootForce>(
       foot_force_topic, rclcpp::SensorDataQoS(),
       std::bind(&ContactDetectionPlugin::callback, this, std::placeholders::_1));
 
@@ -70,33 +76,15 @@ public:
   void reset_() override {}
 
 private:
-  void callback(std_msgs::msg::Float32MultiArray::ConstSharedPtr forces_msg)
+  void callback(state_estimator_msgs::msg::FootForce::ConstSharedPtr forces_msg)
 
   {
-    // Esperamos exactamente 4 valores: [LF, RF, LH, RH]
-    if (!forces_msg || forces_msg->data.size() < 4) {
-      RCLCPP_WARN_THROTTLE(node_->get_logger(), *node_->get_clock(), 2000,
-                           "foot_force espera 4 valores [LF, RF, LH, RH], recibido %zu",
-                           forces_msg ? forces_msg->data.size() : 0);
-      return;
-    }
+    stance_lf = (forces_msg->lf > grf_threshold_);
+    stance_rf = (forces_msg->rf > grf_threshold_);
+    stance_lh = (forces_msg->lh > grf_threshold_);
+    stance_rh = (forces_msg->rh > grf_threshold_);
 
-    const double force_lf = static_cast<double>(forces_msg->data[0]);
-    const double force_rf = static_cast<double>(forces_msg->data[1]);
-    const double force_lh = static_cast<double>(forces_msg->data[2]);
-    const double force_rh = static_cast<double>(forces_msg->data[3]);
-
-    // Comparación simple contra umbral GRF
-    stance_lf = (force_lf > grf_threshold_);
-    stance_rf = (force_rf > grf_threshold_);
-    stance_lh = (force_lh > grf_threshold_);
-    stance_rh = (force_rh > grf_threshold_);
-
-    // Publicación
-    rclcpp::Time now = node_->get_clock()->now();
-    int64_t ns = now.nanoseconds();
-    msg_.header.stamp.sec = static_cast<int32_t>(ns / 1000000000LL);
-    msg_.header.stamp.nanosec = static_cast<uint32_t>(ns % 1000000000LL);
+    msg_.header.stamp = forces_msg->header.stamp;
     msg_.stance_lf = stance_lf;
     msg_.stance_rf = stance_rf;
     msg_.stance_lh = stance_lh;
@@ -106,12 +94,13 @@ private:
   }
 
 private:
-  rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr sub_;
+  rclcpp::Subscription<state_estimator_msgs::msg::FootForce>::SharedPtr sub_;
   rclcpp::Publisher<state_estimator_msgs::msg::ContactDetection>::SharedPtr pub_;
 
   state_estimator_msgs::msg::ContactDetection msg_;
 
   double grf_threshold_;
+
 
   bool stance_lf;
   bool stance_rf;
@@ -123,4 +112,3 @@ private:
 
 #include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS(state_estimator_plugins::ContactDetectionPlugin, state_estimator_plugins::PluginBase)
-
