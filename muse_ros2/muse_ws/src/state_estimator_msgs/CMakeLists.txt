@@ -20,6 +20,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Attitude.msg"
   "msg/ContactDetection.msg"
   "msg/LegOdometry.msg"
+  "msg/FootForce.msg"
   "msg/SensorFusion.msg"
   "msg/JointStateWithAcceleration.msg"
   "srv/GetActiveEstimators.srv"
