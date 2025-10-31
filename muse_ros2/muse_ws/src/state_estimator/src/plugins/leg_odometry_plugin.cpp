@@ -10,7 +10,6 @@ todo en state_estimator_msgs/LegOdometry (lin_vel_lf/rf/lh/rh y base_velocity).
 
 #include "sensor_msgs/msg/joint_state.hpp"
 
-
 #include <pinocchio/parsers/urdf.hpp>
 #include <pinocchio/multibody/data.hpp>
 #include <pinocchio/multibody/fcl.hpp>
@@ -200,7 +199,7 @@ ExactTimePolicy;
 			const state_estimator_msgs::msg::Attitude::ConstSharedPtr& attitude
 		)
 		{
-			RCLCPP_INFO(node_->get_logger(), "CALLBACK");
+			RCLCPP_INFO(node_->get_logger(), "[Leg_Odometry Callback]");
 
 			// Robot joint states
 			// Fill q and v from joint state
@@ -208,7 +207,7 @@ ExactTimePolicy;
 			Eigen::VectorXd v(model_.nv);
 
 			if (js->position.size() != model_.nq || js->velocity.size() != model_.nv) {
-				RCLCPP_WARN_THROTTLE(node_->get_logger(), *node_->get_clock(), 1000, "Mismatch in joint state size");
+				//RCLCPP_INFO(node_->get_logger(), *node_->get_clock(), 1000, "Mismatch in joint state size");
 				return;
 			}
 
@@ -278,7 +277,6 @@ ExactTimePolicy;
 			}
 
 			pub_->publish(msg_);
-			RCLCPP_INFO(node_->get_logger(), "Hello");
 
 		} // end callback
 	private:
@@ -294,7 +292,7 @@ ExactTimePolicy;
 
 		state_estimator_msgs::msg::LegOdometry msg_;        pinocchio::Model model_;
         pinocchio::Data data_;
-        std::vector<std::string> feet_frame_names = {"LF_FOOT", "RF_FOOT", "LH_FOOT", "RH_FOOT"};   // Update with your actual link names
+        std::vector<std::string> feet_frame_names = {"lf_lower_leg_joint", "rf_lower_leg_joint", "lh_lower_leg_joint", "rh_lower_leg_joint"};   // Update with your actual link names
         // std::vector<std::string> feet_frame_names = {"FL_foot", "FR_foot", "RL_foot", "RR_foot"};   // Aliengo robot
 
         bool model_loaded_{false};

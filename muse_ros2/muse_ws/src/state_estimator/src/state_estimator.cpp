@@ -4,6 +4,7 @@
 #include <memory>
 #include <thread>
 #include <chrono>
+#include "rclcpp/executors/multi_threaded_executor.hpp"
 
 void mySigintHandler(int sig);
 sig_atomic_t volatile g_request_shutdown = 0;
@@ -19,8 +20,8 @@ int main(int argc, char **argv) {
     node->init_plugins();
 
     RCLCPP_INFO(node->get_logger(), "Starting state estimator");
+    rclcpp::executors::MultiThreadedExecutor executor;
 
-    rclcpp::executors::SingleThreadedExecutor executor;
     executor.add_node(node);
 
     while (!g_request_shutdown && rclcpp::ok()) {

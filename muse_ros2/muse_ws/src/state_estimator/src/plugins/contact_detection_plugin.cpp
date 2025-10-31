@@ -16,6 +16,9 @@ para cada pata (stance_lf, stance_rf, stance_lh, stance_rh).
 #include <functional>
 #include <string>
 
+#include "rclcpp/callback_group.hpp" 
+#include "rclcpp/subscription_options.hpp"
+
 namespace state_estimator_plugins
 {
 
@@ -61,10 +64,15 @@ public:
                 "ContactDetectionPlugin: topic='%s', pub='%s', GRF threshold=%.3f",
                 foot_force_topic.c_str(), pub_topic.c_str(), grf_threshold_);
 
+
+    reentrant_cbg_ = node_->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
+    rclcpp::SubscriptionOptions sub_ops_;
+    sub_ops_.callback_group = reentrant_cbg_;
+
     // Suscriptor a FootForce con 4 entradas [LF, RF, LH, RH]
     sub_ = node_->create_subscription<state_estimator_msgs::msg::FootForce>(
-      foot_force_topic, rclcpp::SensorDataQoS(),
-      std::bind(&ContactDetectionPlugin::callback, this, std::placeholders::_1));
+      foot_force_topic, rclcpp::SensorDataQoS(), std::bind(&ContactDetectionPlugin::callback, 
+      this, std::placeholders::_1),sub_ops_); 
 
     // Publicador
     pub_ = node_->create_publisher<state_estimator_msgs::msg::ContactDetection>(pub_topic, rclcpp::SystemDefaultsQoS());
@@ -79,6 +87,9 @@ private:
   void callback(state_estimator_msgs::msg::FootForce::ConstSharedPtr forces_msg)
 
   {
+
+    RCLCPP_INFO(node_->get_logger(), "[ContactDetection Callback]");
+
     stance_lf = (forces_msg->lf > grf_threshold_);
     stance_rf = (forces_msg->rf > grf_threshold_);
     stance_lh = (forces_msg->lh > grf_threshold_);
@@ -96,6 +107,7 @@ private:
 private:
   rclcpp::Subscription<state_estimator_msgs::msg::FootForce>::SharedPtr sub_;
   rclcpp::Publisher<state_estimator_msgs::msg::ContactDetection>::SharedPtr pub_;
+  rclcpp::CallbackGroup::SharedPtr reentrant_cbg_;
 
   state_estimator_msgs::msg::ContactDetection msg_;
 

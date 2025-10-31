@@ -5,7 +5,6 @@ Recibe IMU (sensor_msgs/Imu) en /sensors/imu, estima la actitud con un XKF
 con cuaternión, roll/pitch/yaw (°) y velocidad angular filtrada.
 */
 
-// attitude_estimation_plugin.cpp
 #include "state_estimator/plugin.hpp"
 #include "state_estimator/Models/attitude_bias_NLO.hpp"
 #include "state_estimator/Models/attitude_bias_XKF.hpp"
@@ -31,6 +30,10 @@ con cuaternión, roll/pitch/yaw (°) y velocidad angular filtrada.
 #include <cmath>
 #include <iostream>
 
+#include "rclcpp/executors/multi_threaded_executor.hpp"
+#include "rclcpp/callback_group.hpp"                   
+#include "rclcpp/subscription_options.hpp"
+
 // Eigen type aliases
 using Matrix6d = Eigen::Matrix<double, 6, 6>;
 using Vector6d = Eigen::Matrix<double, 6, 1>;
@@ -48,7 +51,8 @@ namespace state_estimator_plugins
             kp(0.0),
             t0(0.0),
             begin(true)
-        { }     
+        { 
+        }     
 
         ~AttitudeEstimationPlugin() 
         {
@@ -147,11 +151,15 @@ namespace state_estimator_plugins
             // instantiate the estimator
             attitude_ = new state_estimator::AttitudeBiasXKF(t0, xhat_estimated, P0, Q, R, f_n, m_n, ki, kp);
 
+
+            reentrant_cbg_ = node_->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
+            rclcpp::SubscriptionOptions sub_ops_;
+            sub_ops_.callback_group = reentrant_cbg_;
+
             // subscriptions / publishers using node_
             imu_sub_ = node_->create_subscription<sensor_msgs::msg::Imu>(
-                imu_topic, rclcpp::QoS(250),
-                std::bind(&AttitudeEstimationPlugin::callback_imu, this, std::placeholders::_1)
-            );
+                imu_topic, 10, std::bind(&AttitudeEstimationPlugin::callback_imu, this, 
+                std::placeholders::_1),sub_ops_);
 
             pub_ = node_->create_publisher<state_estimator_msgs::msg::Attitude>(pub_topic, rclcpp::QoS(1));
 
@@ -165,6 +173,9 @@ namespace state_estimator_plugins
 
         void callback_imu(const sensor_msgs::msg::Imu::SharedPtr imu)
         {
+            RCLCPP_INFO(node_->get_logger(), "[Imu Callback]");
+
+
             // minimal periodic logging
             static int cb_count = 0;
             if ((++cb_count % 500) == 0) {
@@ -289,6 +300,7 @@ namespace state_estimator_plugins
 
         rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
         rclcpp::Publisher<state_estimator_msgs::msg::Attitude>::SharedPtr pub_;
+        rclcpp::CallbackGroup::SharedPtr reentrant_cbg_;
 
         Eigen::Quaterniond quat_est;
         Eigen::Vector3d f_b;
