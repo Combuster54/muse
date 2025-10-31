@@ -22,6 +22,10 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(state_estimator_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rclcpp_components REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 # find_package(iit_commons REQUIRED)
 
 find_package(Boost REQUIRED COMPONENTS system program_options)
@@ -81,6 +85,10 @@ ament_target_dependencies(${PROJECT_NAME}_plugins
   message_filters
   state_estimator_msgs
   std_msgs
+  tf2
+  tf2_msgs
+  tf2_ros
+  tf2_geometry_msgs
   # iit_commons
 )
 
@@ -102,6 +110,10 @@ ament_target_dependencies(${PROJECT_NAME}_node
   message_filters
   state_estimator_msgs
   std_msgs
+  tf2
+  tf2_msgs
+  tf2_ros
+  tf2_geometry_msgs
   # iit_commons
 )
 

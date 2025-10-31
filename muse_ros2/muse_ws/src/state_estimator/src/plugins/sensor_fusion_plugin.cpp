@@ -26,6 +26,11 @@ y vel. angular de Attitude).
 #include <Eigen/Dense>
 #include <Eigen/Geometry>
 
+
+#include <tf2_ros/transform_broadcaster.h>
+#include <geometry_msgs/msg/transform_stamped.hpp>
+
+
 namespace state_estimator_plugins
 {
 
@@ -139,6 +144,9 @@ ExactTimePolicy;
 
         	pub_ = node_->create_publisher<nav_msgs::msg::Odometry>(pub_topic, 250);
 
+
+			tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(node_);
+
         	RCLCPP_INFO(node_->get_logger(), "SensorFusionPlugin initialized");
 		}
 
@@ -154,6 +162,9 @@ ExactTimePolicy;
 			const state_estimator_msgs::msg::LegOdometry::ConstSharedPtr& leg_odom		
 		)
 		{
+
+			RCLCPP_INFO(node_->get_logger(), "[Sensor Fusion Callback]");
+
 			// Reading imu
 			Eigen::Vector3d acc(imu->linear_acceleration.x, imu->linear_acceleration.y, imu->linear_acceleration.z);
 
@@ -201,8 +212,9 @@ ExactTimePolicy;
 			xhat_estimated = sensor_fusion_->getX();
 
 			// publish
-			msg_.header.stamp = current_time;
-			
+    		msg_.header.stamp = node_->get_clock()->now(); // Falta mejorar esto a;adir retraso
+			msg_.header.frame_id = "odom";                        // mundo fijo
+			msg_.child_frame_id  = "base_link";
 			msg_.pose.pose.orientation.w = quat_est.w();
 			msg_.pose.pose.orientation.x = quat_est.x();
 			msg_.pose.pose.orientation.y = quat_est.y();
@@ -222,6 +234,22 @@ ExactTimePolicy;
 
 			pub_->publish(msg_);
 
+
+
+			// === Publicación TF: odom -> base_link ===
+			geometry_msgs::msg::TransformStamped tf;
+			tf.header.stamp    = node_->get_clock()->now(); // Falta mejorar esto a;adir retraso
+			tf.header.frame_id = "odom";
+			tf.child_frame_id  = "base_link";
+			tf.transform.translation.x = xhat_estimated(0);
+			tf.transform.translation.y = xhat_estimated(1);
+			tf.transform.translation.z = xhat_estimated(2);
+			tf.transform.rotation.x      = quat_est.x();
+			tf.transform.rotation.y      = quat_est.y();
+			tf.transform.rotation.z      = quat_est.z();
+			tf.transform.rotation.w      = quat_est.w();
+
+			tf_broadcaster_->sendTransform(tf);
 		} // end computeLinPosVel
 
 
@@ -239,6 +267,9 @@ ExactTimePolicy;
 		std::shared_ptr<message_filters::Subscriber<state_estimator_msgs::msg::Attitude>> attitude_sub_;
 		std::shared_ptr<message_filters::Subscriber<state_estimator_msgs::msg::LegOdometry>> leg_odom_sub_;
 	
+		std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+
+
 		std::shared_ptr<message_filters::Synchronizer<MySyncPolicy>> sync_;
 
 		rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr pub_;
