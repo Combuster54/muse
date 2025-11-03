@@ -162,6 +162,7 @@ namespace state_estimator_plugins
                 std::placeholders::_1),sub_ops_);
 
             pub_ = node_->create_publisher<state_estimator_msgs::msg::Attitude>(pub_topic, rclcpp::QoS(1));
+            pub_imu_ = node_->create_publisher<sensor_msgs::msg::Imu>("/attitude", 10);
 
             RCLCPP_INFO_STREAM(node_->get_logger(), "AttitudeEstimationPlugin initialized. IMU topic: " << imu_topic);
         }
@@ -273,7 +274,16 @@ namespace state_estimator_plugins
             msg_.angular_velocity[1] = omega_filt(1);
             msg_.angular_velocity[2] = omega_filt(2);
 
+            sensor_msgs::msg::Imu imu_msg;
+            imu_msg.header.stamp = node_->get_clock()->now();
+            imu_msg.header.frame_id = "imu_link";
+            imu_msg.orientation.x = static_cast<double>(msg_.quaternion[1]);
+            imu_msg.orientation.y = static_cast<double>(msg_.quaternion[2]);
+            imu_msg.orientation.z = static_cast<double>(msg_.quaternion[3]);
+            imu_msg.orientation.w = static_cast<double>(msg_.quaternion[0]);
+
             pub_->publish(msg_);
+            pub_imu_->publish(imu_msg);
 
             static int pub_count = 0;
             if ((++pub_count % 100) == 0) {
@@ -300,6 +310,8 @@ namespace state_estimator_plugins
 
         rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
         rclcpp::Publisher<state_estimator_msgs::msg::Attitude>::SharedPtr pub_;
+        rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr pub_imu_;
+
         rclcpp::CallbackGroup::SharedPtr reentrant_cbg_;
 
         Eigen::Quaterniond quat_est;
